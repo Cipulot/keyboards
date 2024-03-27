@@ -8,7 +8,12 @@
     "rows": 5
   },
   "layouts": {
-    "labels": ["Split Backspace", "ISO Enter", "ISO Left Shift", "7u Spacebar"],
+    "labels": [
+      "Split Backspace",
+      "ISO Enter",
+      "ISO Left Shift",
+      "7u Spacebar"
+    ],
     "keymap": [
       [
         {

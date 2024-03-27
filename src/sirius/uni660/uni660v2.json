@@ -3,9 +3,19 @@
   "vendorId": "0x5352",
   "productId": "0x0202",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 16},
+  "matrix": {
+    "rows": 5,
+    "cols": 16
+  },
   "layouts": {
-    "presets": {"Default": [0, 0, 0, 0]},
+    "presets": {
+      "Default": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "labels": [
       "Split Backspace",
       "Thumb Fn Key",

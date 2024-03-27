@@ -3,13 +3,20 @@
   "vendorId": "0xCA04",
   "productId": "0x0008",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 15},
+  "matrix": {
+    "rows": 5,
+    "cols": 15
+  },
   "layouts": {
     "labels": [
       "Split Backspace",
       "ISO Enter",
       "Split Left Shift",
-      ["Bottom Row", "ANSI", "7U"]
+      [
+        "Bottom Row",
+        "ANSI",
+        "7U"
+      ]
     ],
     "keymap": [
       [

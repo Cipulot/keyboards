@@ -3,11 +3,19 @@
   "vendorId": "0x9624",
   "productId": "0x0005",
   "lighting": "none",
-  "matrix": {"rows": 8, "cols": 8},
+  "matrix": {
+    "rows": 8,
+    "cols": 8
+  },
   "layouts": {
     "labels": [
       "2u 0 Numpad",
-      ["Bottom Row", "Default", "6.25u Spacebar", "Ocean"]
+      [
+        "Bottom Row",
+        "Default",
+        "6.25u Spacebar",
+        "Ocean"
+      ]
     ],
     "keymap": [
       [

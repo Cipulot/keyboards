@@ -3,9 +3,15 @@
   "vendorId": "0x5641",
   "productId": "0x2045",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
   "layouts": {
-    "labels": ["Split Spacebar", "Top Row Spacebars"],
+    "labels": [
+      "Split Spacebar",
+      "Top Row Spacebars"
+    ],
     "keymap": [
       [
         {

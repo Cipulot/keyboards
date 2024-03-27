@@ -14,7 +14,12 @@
             ]
         },
         "labels": [
-            ["Space", "Hotswap/Solder 87", "Hotswap 86", "Solder 86"],
+            [
+                "Space",
+                "Hotswap/Solder 87",
+                "Hotswap 86",
+                "Solder 86"
+            ],
             "Split Backspace"
         ],
         "keymap": [

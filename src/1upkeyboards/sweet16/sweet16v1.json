@@ -8,8 +8,11 @@
     "cols": 4
   },
   "layouts": {
-    "labels": ["2u Top Right", "2u Bottom Left", "2u Bottom Right"],
-
+    "labels": [
+      "2u Top Right",
+      "2u Bottom Left",
+      "2u Bottom Right"
+    ],
     "keymap": [
       [
         {

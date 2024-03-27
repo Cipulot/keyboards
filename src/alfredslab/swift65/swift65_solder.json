@@ -10,7 +10,11 @@
   "layouts": {
     "labels": [
       "Split Backspace",
-      ["Bottom Row", "6.25U", "7U"],
+      [
+        "Bottom Row",
+        "6.25U",
+        "7U"
+      ],
       "ISO Enter",
       "Split Left Shift"
     ],

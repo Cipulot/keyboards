@@ -3,14 +3,23 @@
   "vendorId": "0x4444",
   "productId": "0x0003",
   "lighting": "none",
-  "matrix": {"rows": 6, "cols": 11},
+  "matrix": {
+    "rows": 6,
+    "cols": 11
+  },
   "layouts": {
     "labels": [
       "Split Backspace",
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Bottom row", "Standard", "Tsangan", "WKL", "Split"]
+      [
+        "Bottom row",
+        "Standard",
+        "Tsangan",
+        "WKL",
+        "Split"
+      ]
     ],
     "keymap": [
       [

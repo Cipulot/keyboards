@@ -231,7 +231,12 @@
                 "4,16"
             ],
             [
-                { "c": "#aaaaaa", "w": 1.5, "x": 3, "y": 0.25 },
+                {
+                    "c": "#aaaaaa",
+                    "w": 1.5,
+                    "x": 3,
+                    "y": 0.25
+                },
                 "4,0\n\n\n4,1",
                 {
                     "c": "#aaaaaa"
@@ -263,6 +268,12 @@
                 "4,13\n\n\n4,1"
             ]
         ],
-        "labels": ["Split BackSpace", "Split Left Shift", "Split Right Shift", "ISO Enter", "7U Spacebar"]
+        "labels": [
+            "Split BackSpace",
+            "Split Left Shift",
+            "Split Right Shift",
+            "ISO Enter",
+            "7U Spacebar"
+        ]
     }
 }

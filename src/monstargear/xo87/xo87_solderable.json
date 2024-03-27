@@ -4,14 +4,26 @@
   "productId": "0x5344",
   "lighting": {
     "extends": "qmk_rgblight",
-    "supportedLightingValues": [128, 129, 131]
+    "supportedLightingValues": [
+      128,
+      129,
+      131
+    ]
   },
-  "matrix": {"rows": 6, "cols": 16},
+  "matrix": {
+    "rows": 6,
+    "cols": 16
+  },
   "layouts": {
     "labels": [
       "ISO Enter",
       "Split Left Shift",
-      ["Bottom Row", "Standard", "7U", "Split"]
+      [
+        "Bottom Row",
+        "Standard",
+        "7U",
+        "Split"
+      ]
     ],
     "keymap": [
       [

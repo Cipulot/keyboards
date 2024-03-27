@@ -13,7 +13,13 @@
       "ISO Enter",
       "Split Left Shift",
       "Full Right Shift",
-      ["Bottom Row", "WKL", "Blockerless", "MX HHKB", "True HHKB"]
+      [
+        "Bottom Row",
+        "WKL",
+        "Blockerless",
+        "MX HHKB",
+        "True HHKB"
+      ]
     ],
     "keymap": [
       [

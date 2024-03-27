@@ -3,9 +3,14 @@
   "vendorId": "0xca04",
   "productId": "0x0009",
   "lighting": "qmk_backlight_rgblight",
-  "matrix": {"rows": 5, "cols": 17},
+  "matrix": {
+    "rows": 5,
+    "cols": 17
+  },
   "layouts": {
-    "labels": ["Long Backspace"],
+    "labels": [
+      "Long Backspace"
+    ],
     "keymap": [
       [
         {

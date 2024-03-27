@@ -8,7 +8,10 @@
     "cols": 18
   },
   "layouts": {
-    "labels": ["Split Backspace", "Tsangan"],
+    "labels": [
+      "Split Backspace",
+      "Tsangan"
+    ],
     "keymap": [
       [
         {

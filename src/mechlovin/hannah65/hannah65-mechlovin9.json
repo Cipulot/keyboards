@@ -3,9 +3,14 @@
   "vendorId": "0x4D4C",
   "productId": "0x6509",
   "lighting": "qmk_backlight",
-  "matrix": {"rows": 5, "cols": 15},
+  "matrix": {
+    "rows": 5,
+    "cols": 15
+  },
   "layouts": {
-    "labels": ["2U Backspace"],
+    "labels": [
+      "2U Backspace"
+    ],
     "keymap": [
       [
         {

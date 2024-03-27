@@ -13,8 +13,18 @@
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Left Bottom Row", "2.75U", "2.25U", "3U"],
-      ["Right Bottom Row", "2.75U", "2.25U", "3U"],
+      [
+        "Left Bottom Row",
+        "2.75U",
+        "2.25U",
+        "3U"
+      ],
+      [
+        "Right Bottom Row",
+        "2.75U",
+        "2.25U",
+        "3U"
+      ],
       "Split Numpad +",
       "Split Numpad Enter",
       "Split Numpad 0"

@@ -9,9 +9,22 @@
   },
   "layouts": {
     "labels": [
-      ["Backspace", "Split", "2U"],
-      ["Enter", "1.25U", "2.25U", "ISO"],
-      ["Bottom Row", "Split", "7U"]
+      [
+        "Backspace",
+        "Split",
+        "2U"
+      ],
+      [
+        "Enter",
+        "1.25U",
+        "2.25U",
+        "ISO"
+      ],
+      [
+        "Bottom Row",
+        "Split",
+        "7U"
+      ]
     ],
     "keymap": [
       [

@@ -20,7 +20,15 @@
         "Zenith",
         "Canon"
       ],
-      ["Bottom row", "ANSI", "Tsangan", "AEK", "Zenith", "Canon", "IBM 5140"]
+      [
+        "Bottom row",
+        "ANSI",
+        "Tsangan",
+        "AEK",
+        "Zenith",
+        "Canon",
+        "IBM 5140"
+      ]
     ],
     "keymap": [
       [

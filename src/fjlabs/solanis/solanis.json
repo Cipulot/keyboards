@@ -3,7 +3,10 @@
   "vendorId": "0x7074",
   "productId": "0x0017",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 6, "cols": 17},
+  "matrix": {
+    "rows": 6,
+    "cols": 17
+  },
   "layouts": {
     "keymap": [
       [
@@ -338,10 +341,20 @@
       ]
     ],
     "labels": [
-      ["Function Row", "F12", "F13"],
+      [
+        "Function Row",
+        "F12",
+        "F13"
+      ],
       "Split Backspace",
       "Split Right Shift",
-      ["Bottom Row", "6.25U", "6.25U Split", "7U", "7U Split"]
+      [
+        "Bottom Row",
+        "6.25U",
+        "6.25U Split",
+        "7U",
+        "7U Split"
+      ]
     ]
   }
 }

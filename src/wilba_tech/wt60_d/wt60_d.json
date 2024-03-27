@@ -3,15 +3,32 @@
   "vendorId": "0x6582",
   "productId": "0x060d",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
   "layouts": {
-    "presets": {"HHKB": [1, 0, 0, 1, 2]},
+    "presets": {
+      "HHKB": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ]
+    },
     "labels": [
       "Split Backspace",
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Bottom Row", "ANSI", "7U", "HHKB", "WKL"]
+      [
+        "Bottom Row",
+        "ANSI",
+        "7U",
+        "HHKB",
+        "WKL"
+      ]
     ],
     "keymap": [
       [

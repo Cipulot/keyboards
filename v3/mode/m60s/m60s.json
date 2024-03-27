@@ -6,8 +6,12 @@
     "name": "M60S",
     "productId": "0x0060",
     "vendorId": "0x00DE",
-    "menus": ["qmk_rgblight" ],
-    "keycodes": ["qmk_lighting"],
+    "menus": [
+        "qmk_rgblight"
+    ],
+    "keycodes": [
+        "qmk_lighting"
+    ],
     "layouts": {
         "keymap": [
             [
@@ -19,7 +23,11 @@
                 "0,13\n\n\n0,1"
             ],
             [
-                { "c": "#777777", "x": 2.75, "y": 0.5 },
+                {
+                    "c": "#777777",
+                    "x": 2.75,
+                    "y": 0.5
+                },
                 "0,0",
                 {
                     "c": "#cccccc"
@@ -169,6 +177,10 @@
                 "5,12"
             ]
         ],
-        "labels": ["Full Backspace", "ISO Enter", "Split Left Shift"]
+        "labels": [
+            "Full Backspace",
+            "ISO Enter",
+            "Split Left Shift"
+        ]
     }
 }

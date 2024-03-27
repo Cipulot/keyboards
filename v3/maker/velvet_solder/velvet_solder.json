@@ -1,8 +1,11 @@
 {
   "name": "Velvet Solder",
-  "vendorId": "0x7667", 
+  "vendorId": "0x7667",
   "productId": "0x0007",
-  "matrix": { "rows": 6, "cols": 17 },
+  "matrix": {
+    "rows": 6,
+    "cols": 17
+  },
   "layouts": {
     "keymap": [
       [
@@ -350,7 +353,13 @@
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Bottom Row", "6.25U Space", "7U Space", "6.25U Split", "7U Split"]
+      [
+        "Bottom Row",
+        "6.25U Space",
+        "7U Space",
+        "6.25U Split",
+        "7U Split"
+      ]
     ]
   }
 }

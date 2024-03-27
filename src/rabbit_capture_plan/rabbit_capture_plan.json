@@ -9,8 +9,16 @@
   },
   "layouts": {
     "labels": [
-      ["Enter", "ISO", "ANSI"],
-      ["Right Shift", "Unified", "Split"]
+      [
+        "Enter",
+        "ISO",
+        "ANSI"
+      ],
+      [
+        "Right Shift",
+        "Unified",
+        "Split"
+      ]
     ],
     "keymap": [
       [

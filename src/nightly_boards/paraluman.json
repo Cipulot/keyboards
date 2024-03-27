@@ -12,7 +12,11 @@
       "Split Backspace",
       "Encoder",
       "Split Right Shift",
-      ["Bottom Row", "6.25U", "7u"]
+      [
+        "Bottom Row",
+        "6.25U",
+        "7u"
+      ]
     ],
     "keymap": [
       [

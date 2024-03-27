@@ -27,7 +27,12 @@
       ],
       "Numpad +",
       "Numpad Enter",
-      ["Numpad Bottom Row", "All keys", "Left 2U", "Right 2U"]
+      [
+        "Numpad Bottom Row",
+        "All keys",
+        "Left 2U",
+        "Right 2U"
+      ]
     ],
     "keymap": [
       {

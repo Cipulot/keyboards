@@ -3,13 +3,33 @@
   "vendorId": "0xa103",
   "productId": "0x0015",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 15},
+  "matrix": {
+    "rows": 5,
+    "cols": 15
+  },
   "layouts": {
     "labels": [
-      ["Backspace", "Unified", "Split"],
-      ["Enter", "ANSI", "ISO"],
-      ["Left Shift", "ANSI", "ISO"],
-      ["Bottom Row", "1.5U/7U", "1.25U/6.25U", "1.25U/2.25U/2.75U"]
+      [
+        "Backspace",
+        "Unified",
+        "Split"
+      ],
+      [
+        "Enter",
+        "ANSI",
+        "ISO"
+      ],
+      [
+        "Left Shift",
+        "ANSI",
+        "ISO"
+      ],
+      [
+        "Bottom Row",
+        "1.5U/7U",
+        "1.25U/6.25U",
+        "1.25U/2.25U/2.75U"
+      ]
     ],
     "keymap": [
       [

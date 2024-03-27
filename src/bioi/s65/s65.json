@@ -8,7 +8,11 @@
     "rows": 5
   },
   "layouts": {
-    "labels": ["ISO Enter", "Split Right Shift", "7u Spacebar"],
+    "labels": [
+      "ISO Enter",
+      "Split Right Shift",
+      "7u Spacebar"
+    ],
     "keymap": [
       [
         {

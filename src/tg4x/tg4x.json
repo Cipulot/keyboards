@@ -3,7 +3,10 @@
   "vendorId": "0x4D4D",
   "productId": "0x0458",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 8, "cols": 7},
+  "matrix": {
+    "rows": 8,
+    "cols": 7
+  },
   "layouts": {
     "keymap": [
       [
@@ -22,7 +25,6 @@
         "0,4",
         "0,5",
         "0,6",
-
         "4,0",
         "4,1",
         "4,2",

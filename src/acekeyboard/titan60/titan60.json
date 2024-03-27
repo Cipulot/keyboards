@@ -19,9 +19,13 @@
         "Split left shift",
         "Split both shifts"
       ],
-      ["Bottom Row", "6.25U", "7U Tsangan", "Utilitarian"]
+      [
+        "Bottom Row",
+        "6.25U",
+        "7U Tsangan",
+        "Utilitarian"
+      ]
     ],
-
     "keymap": [
       [
         {

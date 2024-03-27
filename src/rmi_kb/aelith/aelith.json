@@ -3,7 +3,10 @@
   "vendorId": "0xB16B",
   "productId": "0xE460",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 16},
+  "matrix": {
+    "rows": 5,
+    "cols": 16
+  },
   "layouts": {
     "keymap": [
       [
@@ -286,6 +289,9 @@
         "4,11"
       ]
     ],
-    "labels": ["Split Backspace", "Split Right Shift"]
+    "labels": [
+      "Split Backspace",
+      "Split Right Shift"
+    ]
   }
 }

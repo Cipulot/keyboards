@@ -8,7 +8,13 @@
     "cols": 12
   },
   "layouts": {
-    "labels": [["Bottom row", "1x2u spacebar", "2x2u spacebar"]],
+    "labels": [
+      [
+        "Bottom row",
+        "1x2u spacebar",
+        "2x2u spacebar"
+      ]
+    ],
     "keymap": [
       [
         {

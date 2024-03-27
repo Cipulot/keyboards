@@ -3,9 +3,21 @@
   "vendorId": "0x7654",
   "productId": "0x0060",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 12},
+  "matrix": {
+    "rows": 5,
+    "cols": 12
+  },
   "layouts": {
-    "labels": [["Bottom Row", "5x12", "1x2uC", "2x2uC", "1x2uR", "1x2uL"]],
+    "labels": [
+      [
+        "Bottom Row",
+        "5x12",
+        "1x2uC",
+        "2x2uC",
+        "1x2uR",
+        "1x2uL"
+      ]
+    ],
     "keymap": [
       [
         {

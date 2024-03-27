@@ -15,7 +15,10 @@
       "shortName": "DragScl"
     }
   ],
-  "matrix": {"rows": 1, "cols": 8},
+  "matrix": {
+    "rows": 1,
+    "cols": 8
+  },
   "layouts": {
     "keymap": [
       [

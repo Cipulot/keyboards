@@ -9,7 +9,12 @@
   },
   "layouts": {
     "labels": [
-      ["Enter", "2u Enter", "Split Enter", "Keypad Plus"],
+      [
+        "Enter",
+        "2u Enter",
+        "Split Enter",
+        "Keypad Plus"
+      ],
       "Keypad Enter",
       "Keypad Ins",
       [

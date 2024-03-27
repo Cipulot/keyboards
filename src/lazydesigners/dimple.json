@@ -9,7 +9,12 @@
   },
   "layouts": {
     "labels": [
-      ["Style", "Staggered", "Staggered iso", "Ortho"],
+      [
+        "Style",
+        "Staggered",
+        "Staggered iso",
+        "Ortho"
+      ],
       [
         "Bottom Row",
         "Split",

@@ -1,12 +1,11 @@
   {
     "name": "Erdnuss 65",
-
     "vendorId": "0x636C",
-
     "productId": "0x6374",
-
-    "matrix": { "rows" : 5 , "cols" : 15 },
-
+    "matrix": {
+      "rows": 5,
+      "cols": 15
+    },
     "layouts": {
       "keymap": [
         [

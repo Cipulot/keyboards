@@ -3,9 +3,18 @@
   "vendorId": "0xCA04",
   "productId": "0xDB62",
   "lighting": "qmk_backlight_rgblight",
-  "matrix": {"rows": 5, "cols": 15},
+  "matrix": {
+    "rows": 5,
+    "cols": 15
+  },
   "layouts": {
-    "labels": [["Layout", "ANSI", "Tsangan"]],
+    "labels": [
+      [
+        "Layout",
+        "ANSI",
+        "Tsangan"
+      ]
+    ],
     "keymap": [
       [
         {

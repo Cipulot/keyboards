@@ -2,8 +2,12 @@
   "name": "zoom65",
   "vendorId": "0x1EA7",
   "productId": "0x8888",
-  "keycodes": ["qmk_lighting"],
-  "menus": ["qmk_rgblight"],
+  "keycodes": [
+    "qmk_lighting"
+  ],
+  "menus": [
+    "qmk_rgblight"
+  ],
   "matrix": {
     "rows": 5,
     "cols": 16
@@ -71,7 +75,12 @@
     }
   ],
   "layouts": {
-    "labels": ["Split Backspace", "ISO", "Split Left Shift", "Split Space"],
+    "labels": [
+      "Split Backspace",
+      "ISO",
+      "Split Left Shift",
+      "Split Space"
+    ],
     "keymap": [
       [
         {

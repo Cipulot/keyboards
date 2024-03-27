@@ -3,9 +3,15 @@
   "vendorId": "0x8968",
   "productId": "0x432A",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 5, "cols": 18},
+  "matrix": {
+    "rows": 5,
+    "cols": 18
+  },
   "layouts": {
-    "labels": ["Split Backspace", "Split Space"],
+    "labels": [
+      "Split Backspace",
+      "Split Space"
+    ],
     "keymap": [
       [
         {

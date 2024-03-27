@@ -8,7 +8,13 @@
     "cols": 7
   },
   "layouts": {
-    "labels": [["Bottom Row", "Big Bar", "Split Bars"]],
+    "labels": [
+      [
+        "Bottom Row",
+        "Big Bar",
+        "Split Bars"
+      ]
+    ],
     "keymap": [
       [
         {

@@ -13,7 +13,11 @@
       "ISO Enter",
       "Split LShift",
       "Split RShift",
-      ["Bottom Row", "7u", "WKL"]
+      [
+        "Bottom Row",
+        "7u",
+        "WKL"
+      ]
     ],
     "keymap": [
       [

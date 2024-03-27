@@ -13,7 +13,14 @@
       "Split Left Shift",
       "Split Right Shift",
       "ISO Enter",
-      ["Bottom Row", "ANSI/6.25U", "7U", "10U", "7U-WKL", "10U-WKL"]
+      [
+        "Bottom Row",
+        "ANSI/6.25U",
+        "7U",
+        "10U",
+        "7U-WKL",
+        "10U-WKL"
+      ]
     ],
     "keymap": [
       [

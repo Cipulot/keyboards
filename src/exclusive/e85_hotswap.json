@@ -8,8 +8,14 @@
     "cols": 9
   },
   "layouts": {
-    "labels": [["Bottom Row", "Standard", "Tsangan", "WKL"]],
-
+    "labels": [
+      [
+        "Bottom Row",
+        "Standard",
+        "Tsangan",
+        "WKL"
+      ]
+    ],
     "keymap": [
       [
         {

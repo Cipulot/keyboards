@@ -3,7 +3,10 @@
   "vendorId": "0x4145",
   "productId": "0xae65",
   "lighting": "none",
-  "matrix": {"rows": 10, "cols": 10},
+  "matrix": {
+    "rows": 10,
+    "cols": 10
+  },
   "layouts": {
     "labels": [
       "Split Backspace",

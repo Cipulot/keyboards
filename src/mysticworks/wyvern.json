@@ -341,11 +341,33 @@
       "Stepped Caps Lock",
       "Split Left Shift",
       "ISO Enter",
-      ["Bottom Row", "6.25U", "7U"],
-      ["Top Left Numpad", "2x 1U", "Vertical 2U"],
-      ["Top Right Numpad", "Vertical 2U", "2x 1U"],
-      ["Bottom Left Numpad", "Horizontal 2U", "Vertical 2U", "All 1U"],
-      ["Bottom Right Numpad", "Vertical 2U", "Horizontal 2U", "All 1U"]
+      [
+        "Bottom Row",
+        "6.25U",
+        "7U"
+      ],
+      [
+        "Top Left Numpad",
+        "2x 1U",
+        "Vertical 2U"
+      ],
+      [
+        "Top Right Numpad",
+        "Vertical 2U",
+        "2x 1U"
+      ],
+      [
+        "Bottom Left Numpad",
+        "Horizontal 2U",
+        "Vertical 2U",
+        "All 1U"
+      ],
+      [
+        "Bottom Right Numpad",
+        "Vertical 2U",
+        "Horizontal 2U",
+        "All 1U"
+      ]
     ]
   }
 }

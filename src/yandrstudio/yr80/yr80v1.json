@@ -31,9 +31,15 @@
   },
   "layouts": {
     "presets": {
-      "default": [0, 0]
+      "default": [
+        0,
+        0
+      ]
     },
-    "labels": ["ISO Enter", "WKL Space"],
+    "labels": [
+      "ISO Enter",
+      "WKL Space"
+    ],
     "keymap": [
       [
         {

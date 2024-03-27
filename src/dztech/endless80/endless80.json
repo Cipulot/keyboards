@@ -9,8 +9,16 @@
   },
   "layouts": {
     "labels": [
-      ["Left Shift", "Default", "Split"],
-      ["Right Mods", "3x1u", "2x1.5u"]
+      [
+        "Left Shift",
+        "Default",
+        "Split"
+      ],
+      [
+        "Right Mods",
+        "3x1u",
+        "2x1.5u"
+      ]
     ],
     "keymap": [
       [

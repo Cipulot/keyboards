@@ -3,7 +3,10 @@
   "vendorId": "0x7074",
   "productId": "0x1023",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
   "layouts": {
     "keymap": [
       [
@@ -220,7 +223,12 @@
     "labels": [
       "Split Backspace",
       "Split Right Shift",
-      ["Bottom Row", "6.25U", "7U WKL", "7U WK"]
+      [
+        "Bottom Row",
+        "6.25U",
+        "7U WKL",
+        "7U WK"
+      ]
     ]
   }
 }

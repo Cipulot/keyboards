@@ -21,7 +21,15 @@
         "ISO Arrows",
         "2u LShift"
       ],
-      ["Bottom Row", "ANSI", "TSANGAN", "WKL", "HHKB", "Arrows", "3u"]
+      [
+        "Bottom Row",
+        "ANSI",
+        "TSANGAN",
+        "WKL",
+        "HHKB",
+        "Arrows",
+        "3u"
+      ]
     ],
     "keymap": [
       [

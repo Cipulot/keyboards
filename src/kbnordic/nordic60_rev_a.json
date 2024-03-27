@@ -3,14 +3,22 @@
   "vendorId": "0x4445",
   "productId": "0x0001",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
   "layouts": {
     "labels": [
       "Split backspase",
       "ANSI Enter",
       "Unified Left Shift",
       "Unified Right Shift",
-      ["Bottom row", "Standard", "Tsangan", "WKL"]
+      [
+        "Bottom row",
+        "Standard",
+        "Tsangan",
+        "WKL"
+      ]
     ],
     "keymap": [
       [

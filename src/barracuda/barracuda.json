@@ -3,7 +3,10 @@
   "vendorId": "0x6B6E",
   "productId": "0x0001",
   "lighting": "none",
-  "matrix": {"rows": 6, "cols": 6},
+  "matrix": {
+    "rows": 6,
+    "cols": 6
+  },
   "layouts": {
     "keymap": [
       [

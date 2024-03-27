@@ -8,7 +8,13 @@
     "cols": 15
   },
   "layouts": {
-    "labels": [["Backspace", "Unified", "Split"]],
+    "labels": [
+      [
+        "Backspace",
+        "Unified",
+        "Split"
+      ]
+    ],
     "keymap": [
       [
         {

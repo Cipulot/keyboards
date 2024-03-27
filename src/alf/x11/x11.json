@@ -11,7 +11,11 @@
     "labels": [
       "ISO Enter",
       "Split Right Shift",
-      ["Bottom Row", "7u", "6.25u / Extra Mod"]
+      [
+        "Bottom Row",
+        "7u",
+        "6.25u / Extra Mod"
+      ]
     ],
     "keymap": [
       [

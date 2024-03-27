@@ -13,7 +13,11 @@
       "ISO Enter",
       "Split L-Shift",
       "Full R-Shift",
-      ["Bottom Row", "7U", "6.25U"]
+      [
+        "Bottom Row",
+        "7U",
+        "6.25U"
+      ]
     ],
     "keymap": [
       [

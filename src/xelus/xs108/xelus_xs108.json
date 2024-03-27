@@ -11,7 +11,11 @@
     "labels": [
       "Split Backspace",
       "Split Right Shift",
-      ["Bottom Row", "6.25U", "7U"],
+      [
+        "Bottom Row",
+        "6.25U",
+        "7U"
+      ],
       "Split Numpad 0",
       "Split Numpad +",
       "Split Numpad Enter"

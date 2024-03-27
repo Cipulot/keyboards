@@ -3,7 +3,10 @@
   "vendorId": "0x544B",
   "productId": "0x0009",
   "lighting": "qmk_backlight",
-  "matrix": {"rows": 12, "cols": 10},
+  "matrix": {
+    "rows": 12,
+    "cols": 10
+  },
   "layouts": {
     "labels": [
       "Split Backspace",

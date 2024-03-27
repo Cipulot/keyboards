@@ -3,9 +3,18 @@
   "vendorId": "0x534E",
   "productId": "0x3031",
   "lighting": "none",
-  "matrix": {"rows": 3, "cols": 7},
+  "matrix": {
+    "rows": 3,
+    "cols": 7
+  },
   "layouts": {
-    "labels": [["Knob", "Left", "Right"]],
+    "labels": [
+      [
+        "Knob",
+        "Left",
+        "Right"
+      ]
+    ],
     "keymap": [
       [
         {

@@ -70,7 +70,12 @@
     }
   ],
   "layouts": {
-    "labels": ["Split Backspace", "ISO", "Split Left Shift", "Split Space"],
+    "labels": [
+      "Split Backspace",
+      "ISO",
+      "Split Left Shift",
+      "Split Space"
+    ],
     "keymap": [
       [
         {

@@ -2,23 +2,18 @@
 	"name": "Klein_SD",
 	"productId": "0x0005",
 	"vendorId": "0x4552",
-	"keycodes": 
-	[
+	"keycodes": [
 		"qmk_lighting"
 	],
-	"menus": 
-	[
+	"menus": [
 		"qmk_rgb_matrix"
 	],
-	"matrix": 
-	{
+	"matrix": {
 		"rows": 10,
 		"cols": 16
 	},
-	"layouts":
-	{
-		"labels":
-		[
+	"layouts": {
+		"labels": [
 			"Split Backspace",
 			[
 				"Right shift",
@@ -27,8 +22,7 @@
 				"Arrow & Right shift"
 			]
 		],
-		"keymap":
-		[
+		"keymap": [
 			[
 				{
 					"y": 1.5,

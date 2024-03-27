@@ -12,7 +12,14 @@
       "Split Backspace",
       "ISO Enter",
       "Split Left Shift",
-      ["Bottom Row", "Tsangan", "1u Mods", "WK", "Split Space", "WKL"]
+      [
+        "Bottom Row",
+        "Tsangan",
+        "1u Mods",
+        "WK",
+        "Split Space",
+        "WKL"
+      ]
     ],
     "keymap": [
       [

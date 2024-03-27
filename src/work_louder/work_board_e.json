@@ -55,9 +55,14 @@
       "shortName": "ENC_TAP"
     }
   ],
-  "matrix": {"rows": 4, "cols": 13},
+  "matrix": {
+    "rows": 4,
+    "cols": 13
+  },
   "layouts": {
-    "labels": ["2u Space"],
+    "labels": [
+      "2u Space"
+    ],
     "keymap": [
       [
         {

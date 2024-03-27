@@ -9,8 +9,16 @@
   },
   "layouts": {
     "labels": [
-      ["Left Space", "1u", "2u"],
-      ["Right Space", "1u", "2u"]
+      [
+        "Left Space",
+        "1u",
+        "2u"
+      ],
+      [
+        "Right Space",
+        "1u",
+        "2u"
+      ]
     ],
     "keymap": [
       [

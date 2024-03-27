@@ -3,9 +3,19 @@
   "vendorId": "0xca04",
   "productId": "0x0005",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 4, "cols": 15},
+  "matrix": {
+    "rows": 4,
+    "cols": 15
+  },
   "layouts": {
-    "labels": [["Bottom Row", "Standard", "6.25U Space", "6U Space"]],
+    "labels": [
+      [
+        "Bottom Row",
+        "Standard",
+        "6.25U Space",
+        "6U Space"
+      ]
+    ],
     "keymap": [
       [
         {

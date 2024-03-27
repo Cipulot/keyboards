@@ -2,8 +2,12 @@
   "name": "Jabberwocky v2",
   "vendorId": "0x4E50",
   "productId": "0x4A58",
-  "keycodes": ["qmk_lighting"],
-  "menus": ["qmk_backlight"],
+  "keycodes": [
+    "qmk_lighting"
+  ],
+  "menus": [
+    "qmk_backlight"
+  ],
   "matrix": {
     "rows": 12,
     "cols": 10

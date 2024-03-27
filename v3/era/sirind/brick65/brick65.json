@@ -2,9 +2,16 @@
     "name": "Brick65",
     "productId": "0x0005",
     "vendorId": "0x5943",
-    "keycodes": ["qmk_lighting"],
-    "menus": ["qmk_rgb_matrix"],
-    "matrix": {"rows": 5, "cols": 16},
+    "keycodes": [
+        "qmk_lighting"
+    ],
+    "menus": [
+        "qmk_rgb_matrix"
+    ],
+    "matrix": {
+        "rows": 5,
+        "cols": 16
+    },
     "layouts": {
         "labels": [
             "Split Backspace",

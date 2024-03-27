@@ -206,7 +206,12 @@
     ],
     "labels": [
       "Split Backspace",
-      ["Bottom Row", "625", "2.25 Right", "2.25 Left"]
+      [
+        "Bottom Row",
+        "625",
+        "2.25 Right",
+        "2.25 Left"
+      ]
     ]
   }
 }

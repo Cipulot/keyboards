@@ -8,7 +8,14 @@
     "cols": 14
   },
   "layouts": {
-    "labels": ["Right Shift", ["Bottom Row", "6.25U", "Split"]],
+    "labels": [
+      "Right Shift",
+      [
+        "Bottom Row",
+        "6.25U",
+        "Split"
+      ]
+    ],
     "keymap": [
       [
         "0,0",

@@ -12,7 +12,13 @@
       "OLED",
       "ISO Enter",
       "Split Left Shift",
-      ["Spacebars", "Standard", "Split", "Hotswap Standard", "Hotswap Split"],
+      [
+        "Spacebars",
+        "Standard",
+        "Split",
+        "Hotswap Standard",
+        "Hotswap Split"
+      ],
       "Bottom Mods"
     ],
     "keymap": [

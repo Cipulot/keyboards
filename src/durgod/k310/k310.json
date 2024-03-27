@@ -15,7 +15,13 @@
     "cols": 16
   },
   "layouts": {
-    "labels": [["Layout", "ISO", "ANSI"]],
+    "labels": [
+      [
+        "Layout",
+        "ISO",
+        "ANSI"
+      ]
+    ],
     "keymap": [
       [
         {

@@ -9,7 +9,11 @@
   },
   "layouts": {
     "labels": [
-      ["Variant", "TBR-Prime", "TBR-B"],
+      [
+        "Variant",
+        "TBR-Prime",
+        "TBR-B"
+      ],
       "Split Backspace",
       "ISO",
       "Split Left Shift",

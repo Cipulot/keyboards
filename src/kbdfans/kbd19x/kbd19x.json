@@ -14,7 +14,12 @@
       "Split Left Shift",
       "Split Plus",
       "Split Enter",
-      ["Bottom Row", "ANSI", "6u", "7u"]
+      [
+        "Bottom Row",
+        "ANSI",
+        "6u",
+        "7u"
+      ]
     ],
     "keymap": [
       [

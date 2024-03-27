@@ -12,8 +12,16 @@
   },
   "layouts": {
     "labels": [
-      ["Right Shift", "1u/1.25u", "1.25u/1u"],
-      ["Bottom Row", "Split", "6.25U"]
+      [
+        "Right Shift",
+        "1u/1.25u",
+        "1.25u/1u"
+      ],
+      [
+        "Bottom Row",
+        "Split",
+        "6.25U"
+      ]
     ],
     "keymap": [
       [

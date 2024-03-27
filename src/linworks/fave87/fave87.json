@@ -13,7 +13,11 @@
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Bottom Row", "Regular", "Tsangan"]
+      [
+        "Bottom Row",
+        "Regular",
+        "Tsangan"
+      ]
     ],
     "keymap": [
       [

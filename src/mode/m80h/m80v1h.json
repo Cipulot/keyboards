@@ -8,7 +8,9 @@
     "cols": 16
   },
   "layouts": {
-    "labels": ["7U bottom row"],
+    "labels": [
+      "7U bottom row"
+    ],
     "keymap": [
       [
         {

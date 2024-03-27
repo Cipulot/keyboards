@@ -9,10 +9,19 @@
   },
   "layouts": {
     "labels": [
-      ["Left Space", "3x1u", "1u-2u", "2x1.5u"],
+      [
+        "Left Space",
+        "3x1u",
+        "1u-2u",
+        "2x1.5u"
+      ],
       "Split Right Space",
       "Split Backspace",
-      ["Backslash", "1.5u", "1u"],
+      [
+        "Backslash",
+        "1.5u",
+        "1u"
+      ],
       "Split Right Shift"
     ],
     "keymap": [

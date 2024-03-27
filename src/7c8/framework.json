@@ -3,10 +3,19 @@
   "vendorId": "0x77c8",
   "productId": "0x0001",
   "lighting": "none",
-  "matrix": {"rows": 11, "cols": 6},
+  "matrix": {
+    "rows": 11,
+    "cols": 6
+  },
   "layouts": {
-    "labels": [["Layout", "MIT", "Grid", "2x2U"]],
-
+    "labels": [
+      [
+        "Layout",
+        "MIT",
+        "Grid",
+        "2x2U"
+      ]
+    ],
     "keymap": [
       [
         {

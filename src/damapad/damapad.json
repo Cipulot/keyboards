@@ -8,7 +8,13 @@
     "cols": 6
   },
   "layouts": {
-    "labels": [["Bottom Left", "WKL", "Space"]],
+    "labels": [
+      [
+        "Bottom Left",
+        "WKL",
+        "Space"
+      ]
+    ],
     "keymap": [
       [
         {

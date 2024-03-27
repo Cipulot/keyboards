@@ -3,7 +3,10 @@
   "vendorId": "0x320F",
   "productId": "0x505A",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 14, "cols": 8},
+  "matrix": {
+    "rows": 14,
+    "cols": 8
+  },
   "layouts": {
     "keymap": [
       [

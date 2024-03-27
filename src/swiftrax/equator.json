@@ -9,8 +9,16 @@
   },
   "layouts": {
     "labels": [
-      ["Backspace", "Unified", "Split"],
-      ["Right Shift", "Unified", "Split"]
+      [
+        "Backspace",
+        "Unified",
+        "Split"
+      ],
+      [
+        "Right Shift",
+        "Unified",
+        "Split"
+      ]
     ],
     "keymap": [
       [

@@ -13,7 +13,11 @@
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Bottom Row", "Regular", "Tsangan"]
+      [
+        "Bottom Row",
+        "Regular",
+        "Tsangan"
+      ]
     ],
     "keymap": [
       [
@@ -224,7 +228,10 @@
         "9,4",
         "8,5",
         "9,5",
-        {"c": "#aaaaaa", "w": 2.75},
+        {
+          "c": "#aaaaaa",
+          "w": 2.75
+        },
         "8,6\n\n\n3,0",
         {
           "x": 1.25,

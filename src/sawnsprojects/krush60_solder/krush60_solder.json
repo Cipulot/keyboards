@@ -11,7 +11,12 @@
     "labels": [
       "Split Backspace",
       "ISO Enter",
-      ["Right Shift", "2.75", "Arrow", "Tsangan"],
+      [
+        "Right Shift",
+        "2.75",
+        "Arrow",
+        "Tsangan"
+      ],
       [
         "Spacebar",
         "Standard",
@@ -24,7 +29,6 @@
         "7u WKL"
       ]
     ],
-
     "keymap": [
       [
         {

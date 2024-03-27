@@ -2,8 +2,12 @@
   "name": "Ripple",
   "vendorId": "0xCA04",
   "productId": "0x0025",
-  "keycodes": ["qmk_lighting"],
-  "menus": ["qmk_backlight_rgblight"],
+  "keycodes": [
+    "qmk_lighting"
+  ],
+  "menus": [
+    "qmk_backlight_rgblight"
+  ],
   "matrix": {
     "rows": 6,
     "cols": 18

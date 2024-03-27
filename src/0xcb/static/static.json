@@ -8,7 +8,13 @@
     "cols": 6
   },
   "layouts": {
-    "labels": [["Space", "Split", "6.25U"]],
+    "labels": [
+      [
+        "Space",
+        "Split",
+        "6.25U"
+      ]
+    ],
     "keymap": [
       [
         {

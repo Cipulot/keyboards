@@ -3,9 +3,15 @@
   "vendorId": "0x7070",
   "productId": "0x3508",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
   "layouts": {
-    "labels": ["Full Backspace", "Full Right Shift"],
+    "labels": [
+      "Full Backspace",
+      "Full Right Shift"
+    ],
     "keymap": [
       {
         "name": "G_IDB60"

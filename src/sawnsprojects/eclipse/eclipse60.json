@@ -12,7 +12,12 @@
       "Split Backspace",
       "ISO Enter",
       "Split Left Shift",
-      ["Right Shift", "Standard", "Tsangan", "Arrow"],
+      [
+        "Right Shift",
+        "Standard",
+        "Tsangan",
+        "Arrow"
+      ],
       [
         "Spacebar",
         "Standard",
@@ -24,7 +29,6 @@
         "6U Standard"
       ]
     ],
-
     "keymap": [
       [
         {

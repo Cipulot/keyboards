@@ -3,9 +3,14 @@
   "vendorId": "0x6770",
   "productId": "0x6501",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 16},
+  "matrix": {
+    "rows": 5,
+    "cols": 16
+  },
   "layouts": {
-    "labels": ["split backspace"],
+    "labels": [
+      "split backspace"
+    ],
     "keymap": [
       [
         {

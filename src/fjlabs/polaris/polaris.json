@@ -3,7 +3,10 @@
   "vendorId": "0x7074",
   "productId": "0x9001",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
   "layouts": {
     "keymap": [
       [
@@ -287,7 +290,13 @@
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
-      ["Bottom Row", "6.25U Space", "Split 6.25U", "7U Space", "7U WKL"]
+      [
+        "Bottom Row",
+        "6.25U Space",
+        "Split 6.25U",
+        "7U Space",
+        "7U WKL"
+      ]
     ]
   }
 }

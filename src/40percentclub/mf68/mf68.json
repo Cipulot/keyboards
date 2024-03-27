@@ -3,7 +3,10 @@
   "vendorId": "0x3430",
   "productId": "0x4D68",
   "lighting": "qmk_backlight",
-  "matrix": {"rows": 8, "cols": 9},
+  "matrix": {
+    "rows": 8,
+    "cols": 9
+  },
   "layouts": {
     "keymap": [
       [

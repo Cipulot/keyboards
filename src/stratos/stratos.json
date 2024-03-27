@@ -12,7 +12,12 @@
       "Split BackSpace",
       "ISO Enter",
       "Split LShift",
-      ["Right shift", "Full", "Split", "Arrows"],
+      [
+        "Right shift",
+        "Full",
+        "Split",
+        "Arrows"
+      ],
       [
         "Bottom Row",
         "Ansi",

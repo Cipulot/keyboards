@@ -8,7 +8,11 @@
     "cols": 9
   },
   "layouts": {
-    "labels": ["Full Backspace", "Full Right Shift", "ANSI"],
+    "labels": [
+      "Full Backspace",
+      "Full Right Shift",
+      "ANSI"
+    ],
     "keymap": [
       [
         {

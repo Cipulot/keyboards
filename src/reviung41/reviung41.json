@@ -5,7 +5,10 @@
   "lighting": {
     "extends": "qmk_rgblight"
   },
-  "matrix": {"rows": 7, "cols": 6},
+  "matrix": {
+    "rows": 7,
+    "cols": 6
+  },
   "layouts": {
     "keymap": [
       [

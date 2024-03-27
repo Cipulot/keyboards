@@ -3,11 +3,24 @@
   "vendorId": "0x7070",
   "productId": "0x5342",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 5, "cols": 12},
+  "matrix": {
+    "rows": 5,
+    "cols": 12
+  },
   "layouts": {
     "labels": [
-      ["4th Row", "1u's", "2x225u", "2u"],
-      ["5th Row", "2x225u", "2u", "None"]
+      [
+        "4th Row",
+        "1u's",
+        "2x225u",
+        "2u"
+      ],
+      [
+        "5th Row",
+        "2x225u",
+        "2u",
+        "None"
+      ]
     ],
     "keymap": [
       [

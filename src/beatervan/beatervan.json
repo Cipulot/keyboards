@@ -3,9 +3,15 @@
   "vendorId": "0x6F6A",
   "productId": "0x6276",
   "lighting": "none",
-  "matrix": {"rows": 4, "cols": 12},
+  "matrix": {
+    "rows": 4,
+    "cols": 12
+  },
   "layouts": {
-    "labels": ["Command", "Arrows"],
+    "labels": [
+      "Command",
+      "Arrows"
+    ],
     "keymap": [
       [
         "0,0",

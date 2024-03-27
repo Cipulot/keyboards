@@ -218,6 +218,10 @@
         "0,5\n\n\n2,1"
       ]
     ],
-    "labels": ["ISO Enter", "ISO Left Shift", "RWKL"]
+    "labels": [
+      "ISO Enter",
+      "ISO Left Shift",
+      "RWKL"
+    ]
   }
 }

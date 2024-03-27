@@ -11,7 +11,13 @@
     "labels": [
       "Split Backspace",
       "Split Right Shift",
-      ["Bottom Row", "ANSI", "7U", "WKL", "HHKB"]
+      [
+        "Bottom Row",
+        "ANSI",
+        "7U",
+        "WKL",
+        "HHKB"
+      ]
     ],
     "keymap": [
       [

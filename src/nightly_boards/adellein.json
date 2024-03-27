@@ -8,7 +8,10 @@
     "cols": 13
   },
   "layouts": {
-    "labels": ["Split Enter", "Encoder"],
+    "labels": [
+      "Split Enter",
+      "Encoder"
+    ],
     "keymap": [
       [
         {

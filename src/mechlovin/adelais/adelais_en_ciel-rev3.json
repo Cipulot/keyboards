@@ -4,7 +4,11 @@
   "productId": "0xAEC3",
   "lighting": "qmk_rgblight",
   "customKeycodes": [
-    {"name": "Backlight Toggle", "title": "BL TOG", "shortName": "BL TOG"},
+    {
+      "name": "Backlight Toggle",
+      "title": "BL TOG",
+      "shortName": "BL TOG"
+    },
     {
       "name": "Backlight Effect",
       "title": "Backlight Effect",
@@ -51,9 +55,16 @@
       "shortName": "BL DVAL"
     }
   ],
-  "matrix": {"rows": 5, "cols": 15},
+  "matrix": {
+    "rows": 5,
+    "cols": 15
+  },
   "layouts": {
-    "labels": ["Split Back Space", "Split Right Shift", "Split Space"],
+    "labels": [
+      "Split Back Space",
+      "Split Right Shift",
+      "Split Space"
+    ],
     "keymap": [
       [
         {

@@ -13,7 +13,13 @@
       "ISO Enter",
       "Split Left Shift",
       "Full Right Shift",
-      ["Bottom Row", "Winkey A", "Winkey B", "Winkeyless A", "Winkeyless B"]
+      [
+        "Bottom Row",
+        "Winkey A",
+        "Winkey B",
+        "Winkeyless A",
+        "Winkeyless B"
+      ]
     ],
     "keymap": [
       [

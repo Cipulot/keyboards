@@ -3,7 +3,10 @@
   "vendorId": "0x726b",
   "productId": "0x726b",
   "lighting": "none",
-  "matrix": {"rows": 8, "cols": 6},
+  "matrix": {
+    "rows": 8,
+    "cols": 6
+  },
   "layouts": {
     "keymap": [
       [

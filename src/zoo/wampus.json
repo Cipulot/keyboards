@@ -8,7 +8,10 @@
     "cols": 15
   },
   "layouts": {
-    "labels": ["Long Backspace", "Long RShift"],
+    "labels": [
+      "Long Backspace",
+      "Long RShift"
+    ],
     "keymap": [
       [
         {

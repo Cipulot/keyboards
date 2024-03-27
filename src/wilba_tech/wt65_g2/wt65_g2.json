@@ -3,9 +3,16 @@
   "vendorId": "0x6582",
   "productId": "0x002A",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 15},
+  "matrix": {
+    "rows": 5,
+    "cols": 15
+  },
   "layouts": {
-    "labels": ["2U Backspace", "ISO Enter", "Split Left Shift"],
+    "labels": [
+      "2U Backspace",
+      "ISO Enter",
+      "Split Left Shift"
+    ],
     "keymap": [
       [
         {

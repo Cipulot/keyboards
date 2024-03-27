@@ -3,7 +3,10 @@
   "vendorId": "0x4753",
   "productId": "0x2000",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 8, "cols": 15},
+  "matrix": {
+    "rows": 8,
+    "cols": 15
+  },
   "layouts": {
     "labels": [
       "Split Backspace",
@@ -11,7 +14,12 @@
       "Split Left Shift",
       "Split Right Shift",
       "Split 0 key",
-      ["Right Modifiers", "Basic", "STT", "AOP"]
+      [
+        "Right Modifiers",
+        "Basic",
+        "STT",
+        "AOP"
+      ]
     ],
     "keymap": [
       [

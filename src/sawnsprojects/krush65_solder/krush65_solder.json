@@ -11,9 +11,13 @@
     "labels": [
       "Split Backspace",
       "ISO Enter",
-      ["Spacebar", "Standard", "Split", "7u"]
+      [
+        "Spacebar",
+        "Standard",
+        "Split",
+        "7u"
+      ]
     ],
-
     "keymap": [
       [
         {

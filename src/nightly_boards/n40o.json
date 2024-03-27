@@ -8,7 +8,9 @@
     "cols": 13
   },
   "layouts": {
-    "labels": ["2U Enter"],
+    "labels": [
+      "2U Enter"
+    ],
     "keymap": [
       [
         {

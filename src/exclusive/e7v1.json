@@ -10,11 +10,18 @@
   "layouts": {
     "labels": [
       "Split Backspace",
-      ["Enter Key", "ANSI", "ISO"],
+      [
+        "Enter Key",
+        "ANSI",
+        "ISO"
+      ],
       "Split Left Shift",
-      ["Bottom Row", "6.25u", "7u"]
+      [
+        "Bottom Row",
+        "6.25u",
+        "7u"
+      ]
     ],
-
     "keymap": [
       [
         {

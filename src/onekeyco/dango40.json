@@ -9,7 +9,12 @@
   },
   "layouts": {
     "labels": [
-      ["Bottom Row", "Split Space", "Full Space", "Full Space + Arrows"]
+      [
+        "Bottom Row",
+        "Split Space",
+        "Full Space",
+        "Full Space + Arrows"
+      ]
     ],
     "keymap": [
       [

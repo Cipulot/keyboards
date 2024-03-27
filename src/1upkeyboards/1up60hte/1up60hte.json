@@ -8,8 +8,13 @@
     "cols": 14
   },
   "layouts": {
-    "labels": [["Bottom Row", "Tsangan", "HHKB"]],
-
+    "labels": [
+      [
+        "Bottom Row",
+        "Tsangan",
+        "HHKB"
+      ]
+    ],
     "keymap": [
       [
         {

@@ -10,10 +10,18 @@
   "layouts": {
     "labels": [
       "Full Backspace",
-      ["Enter", "ANSI", "ISO"],
+      [
+        "Enter",
+        "ANSI",
+        "ISO"
+      ],
       "Full Left Shift",
       "Full Right Shift",
-      ["Bottom Row", "ANSI", "Tsangan"]
+      [
+        "Bottom Row",
+        "ANSI",
+        "Tsangan"
+      ]
     ],
     "keymap": [
       [

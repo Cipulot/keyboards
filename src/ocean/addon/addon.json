@@ -3,12 +3,27 @@
   "vendorId": "0x9624",
   "productId": "0x0012",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 7},
+  "matrix": {
+    "rows": 5,
+    "cols": 7
+  },
   "layouts": {
     "labels": [
-      ["0", "2u", "2x 1u"],
-      ["Enter", "2u", "2x 1u"],
-      ["+", "2u", "2x 1u"]
+      [
+        "0",
+        "2u",
+        "2x 1u"
+      ],
+      [
+        "Enter",
+        "2u",
+        "2x 1u"
+      ],
+      [
+        "+",
+        "2u",
+        "2x 1u"
+      ]
     ],
     "keymap": [
       [
