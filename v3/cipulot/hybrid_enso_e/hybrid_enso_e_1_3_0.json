@@ -14,13 +14,20 @@
           "label": "General Board",
           "content": [
             {
-              "label": "Switch Type",
+              "label": "Board Mode",
+              "type": "dropdown",
+              "options": ["Full EC", "Full MX", "Hybrid"],
+              "content": ["id_board_mode", 0, 109]
+            },
+            {
+              "showIf": "{id_board_mode} == 2",
+              "label": "Main Cluster Switch Type",
               "type": "dropdown",
               "options": ["EC", "MX"],
               "content": ["id_switch_type", 0, 96]
             },
             {
-              "showIf": "{id_switch_type} == 0",
+              "showIf": "{id_board_mode} == 0 || ({id_board_mode} == 2 && {id_switch_type} == 0)",
               "content": [
                 {
                   "label": "Mode",
@@ -31,7 +38,7 @@
               ]
             },
             {
-              "showIf": "{id_switch_type} == 0 && {id_actuation_mode} == 0",
+              "showIf": "({id_board_mode} == 0 && {id_actuation_mode} == 0) || ({id_board_mode} == 2 && {id_switch_type} == 0 && {id_actuation_mode} == 0)",
               "content": [
                 {
                   "label": "Actuation Level (0% | 100%)",
@@ -54,7 +61,7 @@
               ]
             },
             {
-              "showIf": "{id_switch_type} == 0 && {id_actuation_mode} == 1",
+              "showIf": "({id_board_mode} == 0 && {id_actuation_mode} == 1) || ({id_board_mode} == 2 && {id_switch_type} == 0 && {id_actuation_mode} == 1)",
               "content": [
                 {
                   "label": "Initial Deadzone Offset (0% | 100%)",
@@ -85,6 +92,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Caps Key",
           "content": [
             {
@@ -159,6 +167,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Left Shift Key",
           "content": [
             {
@@ -233,6 +242,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Right Shift Key",
           "content": [
             {
@@ -307,6 +317,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Right FN Key",
           "content": [
             {
@@ -381,6 +392,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Left Mod 1 Key",
           "content": [
             {
@@ -455,6 +467,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Left Mod 2 Key",
           "content": [
             {
@@ -529,6 +542,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Left Spacebar 1 Key",
           "content": [
             {
@@ -603,6 +617,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Left Spacebar 2 Key",
           "content": [
             {
@@ -677,6 +692,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Right Spacebar 1 Key",
           "content": [
             {
@@ -751,6 +767,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Right Spacebar 2 Key",
           "content": [
             {
@@ -825,6 +842,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Right Mod 1 Key",
           "content": [
             {
@@ -899,6 +917,7 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 2",
           "label": "Right Mod 2 Key",
           "content": [
             {
@@ -976,7 +995,7 @@
           "label": "Calibration",
           "content": [
             {
-              "showIf": "{id_switch_type} == 0",
+              "showIf": "{id_board_mode} == 0 || {id_board_mode} == 2",
               "content": [
                 {
                   "label": "Bottoming Calibration",
