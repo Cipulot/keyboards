@@ -217,7 +217,7 @@
           "label": "Calibration",
           "content": [
             {
-              "label": "Bottoming Calibration",
+              "label": "Board Calibration",
               "type": "toggle",
               "content": ["id_bottoming_calibration", 0, 20]
             },
@@ -234,7 +234,7 @@
               "content": ["id_show_calibration_data", 0, 22]
             },
             {
-              "label": "Clear Bottoming Calibration Data",
+              "label": "Clear Board Calibration Data",
               "type": "button",
               "options": [0],
               "content": ["id_clear_bottoming_calibration_data", 0, 23]

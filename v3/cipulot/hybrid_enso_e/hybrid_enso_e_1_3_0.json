@@ -998,7 +998,7 @@
               "showIf": "{id_board_mode} == 0 || {id_board_mode} == 2",
               "content": [
                 {
-                  "label": "Bottoming Calibration",
+                  "label": "Board Calibration",
                   "type": "toggle",
                   "content": ["id_bottoming_calibration", 0, 92]
                 },
@@ -1015,7 +1015,7 @@
                   "content": ["id_show_calibration_data", 0, 94]
                 },
                 {
-                  "label": "Clear Bottoming Calibration Data",
+                  "label": "Clear Board Calibration Data",
                   "type": "button",
                   "options": [0],
                   "content": ["id_clear_bottoming_calibration_data", 0, 95]
