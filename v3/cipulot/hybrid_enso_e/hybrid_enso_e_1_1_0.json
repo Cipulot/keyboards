@@ -96,7 +96,7 @@
                   "content": ["id_bottoming_calibration", 0, 8]
                 },
                 {
-                  "label": "Show Calibration Data",
+                  "label": "Show Board Calibration Data",
                   "type": "button",
                   "options": [0],
                   "content": ["id_show_calibration_data", 0, 10]
