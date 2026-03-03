@@ -182,7 +182,7 @@
               "content": ["id_noise_floor_calibration", 0, 18]
             },
             {
-              "label": "Show Board Calibration Data",
+              "label": "Show Calibration Data",
               "type": "button",
               "options": [0],
               "content": ["id_show_calibration_data", 0, 19]
