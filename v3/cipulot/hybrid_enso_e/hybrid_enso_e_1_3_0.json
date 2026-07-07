@@ -108,7 +108,7 @@
                   "label": "Caps Key Mode",
                   "type": "dropdown",
                   "options": ["APC", "Rapid Trigger"],
-                  "content": ["id_actuation_mode_key_1", 0, 85]
+                  "content": ["id_actuation_mode_key_1", 0, 2]
                 }
               ]
             },
@@ -119,13 +119,13 @@
                   "label": "Actuation Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
-                  "content": ["id_apc_actuation_threshold_key_1", 0, 86]
+                  "content": ["id_apc_actuation_threshold_key_1", 0, 3]
                 },
                 {
                   "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
                   "type": "range",
                   "options": [1, 1023],
-                  "content": ["id_apc_release_threshold_key_1", 0, 87]
+                  "content": ["id_apc_release_threshold_key_1", 0, 4]
                 },
                 {
                   "label": "Apply & save changes",
@@ -142,19 +142,19 @@
                   "label": "Initial Deadzone Offset (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
-                  "content": ["id_rt_initial_deadzone_offset_key_1", 0, 89]
+                  "content": ["id_rt_initial_deadzone_offset_key_1", 0, 5]
                 },
                 {
                   "label": "Actuation Offset (1-255)",
                   "type": "range",
                   "options": [1, 255],
-                  "content": ["id_rt_actuation_offset_key_1", 0, 90]
+                  "content": ["id_rt_actuation_offset_key_1", 0, 6]
                 },
                 {
                   "label": "Release Offset (1-255)",
                   "type": "range",
                   "options": [1, 255],
-                  "content": ["id_rt_release_offset_key_1", 0, 91]
+                  "content": ["id_rt_release_offset_key_1", 0, 7]
                 },
                 {
                   "label": "Apply & save changes",
