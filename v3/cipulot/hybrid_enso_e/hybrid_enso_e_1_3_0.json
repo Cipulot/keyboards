@@ -992,10 +992,10 @@
           ]
         },
         {
+          "showIf": "{id_board_mode} == 0 || ({id_board_mode} == 2 && ({id_switch_type} == 0 || {id_switch_type_key_1} == 0 || {id_switch_type_key_2} == 0 || {id_switch_type_key_3} == 0 || {id_switch_type_key_4} == 0 || {id_switch_type_key_5} == 0 || {id_switch_type_key_6} == 0 || {id_switch_type_key_7} == 0 || {id_switch_type_key_8} == 0 || {id_switch_type_key_9} == 0 || {id_switch_type_key_10} == 0 || {id_switch_type_key_11} == 0 || {id_switch_type_key_12} == 0))",
           "label": "Calibration",
           "content": [
             {
-              "showIf": "{id_board_mode} == 0 || ({id_board_mode} == 2 && ({id_switch_type} == 0 || {id_switch_type_key_1} == 0 || {id_switch_type_key_2} == 0 || {id_switch_type_key_3} == 0 || {id_switch_type_key_4} == 0 || {id_switch_type_key_5} == 0 || {id_switch_type_key_6} == 0 || {id_switch_type_key_7} == 0 || {id_switch_type_key_8} == 0 || {id_switch_type_key_9} == 0 || {id_switch_type_key_10} == 0 || {id_switch_type_key_11} == 0 || {id_switch_type_key_12} == 0))",
               "content": [
                 {
                   "label": "Board Calibration",
