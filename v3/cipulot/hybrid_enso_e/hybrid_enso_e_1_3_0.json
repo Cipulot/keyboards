@@ -1152,6 +1152,11 @@
               "content": ["id_firmware_version_text", 0, 112]
             },
             {
+              "label": "Firmware Build",
+              "type": "label",
+              "content": ["id_firmware_build_text", 0, 113]
+            },
+            {
               "label": "Flash Mode",
               "type": "button",
               "options": [0],
