@@ -242,6 +242,16 @@
           "label": "Board Maintenance",
           "content": [
             {
+              "label": "Firmware Version",
+              "type": "label",
+              "content": ["id_firmware_version_text", 0, 27]
+            },
+            {
+              "label": "Firmware Build",
+              "type": "label",
+              "content": ["id_firmware_build_text", 0, 28]
+            },
+            {
               "label": "Flash Mode",
               "type": "button",
               "options": [0],
