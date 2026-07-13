@@ -55,7 +55,7 @@
                   "content": ["id_mode_0_actuation_threshold", 0, 86]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -146,7 +146,7 @@
                   "content": ["id_apc_actuation_threshold_key_1", 0, 3]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -237,7 +237,7 @@
                   "content": ["id_apc_actuation_threshold_key_2", 0, 10]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -328,7 +328,7 @@
                   "content": ["id_apc_actuation_threshold_key_3", 0, 17]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -419,7 +419,7 @@
                   "content": ["id_apc_actuation_threshold_key_4", 0, 24]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -510,7 +510,7 @@
                   "content": ["id_apc_actuation_threshold_key_5", 0, 31]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -601,7 +601,7 @@
                   "content": ["id_apc_actuation_threshold_key_6", 0, 38]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -692,7 +692,7 @@
                   "content": ["id_apc_actuation_threshold_key_7", 0, 45]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -783,7 +783,7 @@
                   "content": ["id_apc_actuation_threshold_key_8", 0, 52]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -874,7 +874,7 @@
                   "content": ["id_apc_actuation_threshold_key_9", 0, 59]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -965,7 +965,7 @@
                   "content": ["id_apc_actuation_threshold_key_10", 0, 66]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -1056,7 +1056,7 @@
                   "content": ["id_apc_actuation_threshold_key_11", 0, 73]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -1147,7 +1147,7 @@
                   "content": ["id_apc_actuation_threshold_key_12", 0, 80]
                 },
                 {
-                  "label": "Release Level (0% | 100%, ALWAYS < Actuation Level)",
+                  "label": "Release Level (0% | 100%)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
