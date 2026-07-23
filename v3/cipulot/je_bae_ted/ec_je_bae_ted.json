@@ -8,7 +8,7 @@
   },
   "menus": [
     {
-      "label": "EC Tools",
+      "label": "Switch Configuration",
       "content": [
         {
           "label": "Actuation",
@@ -23,7 +23,7 @@
               "showIf": "{id_actuation_mode} == 0",
               "content": [
                 {
-                  "label": "Actuation Level (0% | 100%)",
+                  "label": "Actuation threshold (1-1023)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -37,7 +37,7 @@
                   "content": ["id_apc_actuation_threshold", 0, 2]
                 },
                 {
-                  "label": "Release Level (0% | 100%)",
+                  "label": "Release threshold (1-1023)",
                   "type": "range",
                   "options": [1, 1023],
                   "constraints": [
@@ -62,19 +62,19 @@
               "showIf": "{id_actuation_mode} == 1",
               "content": [
                 {
-                  "label": "Initial Deadzone Offset (0% | 100%)",
+                  "label": "Initial deadzone offset (1-1023)",
                   "type": "range",
                   "options": [1, 1023],
                   "content": ["id_rt_initial_deadzone_offset", 0, 5]
                 },
                 {
-                  "label": "Actuation Offset (1-255)",
+                  "label": "Actuation offset (1-255)",
                   "type": "range",
                   "options": [1, 255],
                   "content": ["id_rt_actuation_offset", 0, 6]
                 },
                 {
-                  "label": "Release Offset (1-255)",
+                  "label": "Release offset (1-255)",
                   "type": "range",
                   "options": [1, 255],
                   "content": ["id_rt_release_offset", 0, 7]
@@ -99,17 +99,135 @@
             },
             {
               "showIf": "{id_bottoming_calibration} == 0",
-              "label": "Show Board Calibration Data",
+              "label": "Print calibration data to console",
               "type": "button",
               "options": [0],
               "content": ["id_show_calibration_data", 0, 10]
             },
             {
               "showIf": "{id_bottoming_calibration} == 0",
-              "label": "Clear Board Calibration Data",
+              "label": "Clear bottom-out calibration data",
               "type": "button",
               "options": [0],
               "content": ["id_clear_bottoming_calibration_data", 0, 11]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Gaming Features",
+      "content": [
+        {
+          "label": "SOCD",
+          "content": [
+            {
+              "label": "Pair #1 Mode",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Last Priority", 1],
+                ["Neutral", 2],
+                ["First Key Priority", 3],
+                ["Second Key Priority", 4]
+              ],
+              "content": ["id_socd_pair_1_mode", 0, 14]
+            },
+            {
+              "showIf": "{id_socd_pair_1_mode} != 0",
+              "content": [
+                {
+                  "label": "Pair #1 First Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_1_key_1", 0, 15]
+                },
+                {
+                  "label": "Pair #1 Second Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_1_key_2", 0, 16]
+                }
+              ]
+            },
+            {
+              "label": "Pair #2 Mode",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Last Priority", 1],
+                ["Neutral", 2],
+                ["First Key Priority", 3],
+                ["Second Key Priority", 4]
+              ],
+              "content": ["id_socd_pair_2_mode", 0, 17]
+            },
+            {
+              "showIf": "{id_socd_pair_2_mode} != 0",
+              "content": [
+                {
+                  "label": "Pair #2 First Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_2_key_1", 0, 18]
+                },
+                {
+                  "label": "Pair #2 Second Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_2_key_2", 0, 19]
+                }
+              ]
+            },
+            {
+              "label": "Pair #3 Mode",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Last Priority", 1],
+                ["Neutral", 2],
+                ["First Key Priority", 3],
+                ["Second Key Priority", 4]
+              ],
+              "content": ["id_socd_pair_3_mode", 0, 20]
+            },
+            {
+              "showIf": "{id_socd_pair_3_mode} != 0",
+              "content": [
+                {
+                  "label": "Pair #3 First Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_3_key_1", 0, 21]
+                },
+                {
+                  "label": "Pair #3 Second Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_3_key_2", 0, 22]
+                }
+              ]
+            },
+            {
+              "label": "Pair #4 Mode",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Last Priority", 1],
+                ["Neutral", 2],
+                ["First Key Priority", 3],
+                ["Second Key Priority", 4]
+              ],
+              "content": ["id_socd_pair_4_mode", 0, 23]
+            },
+            {
+              "showIf": "{id_socd_pair_4_mode} != 0",
+              "content": [
+                {
+                  "label": "Pair #4 First Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_4_key_1", 0, 24]
+                },
+                {
+                  "label": "Pair #4 Second Key",
+                  "type": "keycode",
+                  "content": ["id_socd_pair_4_key_2", 0, 25]
+                }
+              ]
             }
           ]
         }
@@ -1270,10 +1388,10 @@
       ]
     },
     {
-      "label": "Board System",
+      "label": "System",
       "content": [
         {
-          "label": "Board Information",
+          "label": "Maintenance",
           "content": [
             {
               "showIf": "{id_firmware_version} >= 2",
@@ -1283,9 +1401,21 @@
             },
             {
               "showIf": "{id_firmware_version} >= 2",
-              "label": "Firmware Build",
+              "label": "Firmware build date",
               "type": "label",
               "content": ["id_firmware_build_text", 0, 13]
+            },
+            {
+              "label": "Enter bootloader",
+              "type": "button",
+              "options": [0],
+              "content": ["id_flash_mode", 0, 26]
+            },
+            {
+              "label": "Factory reset (erases all settings and restarts)",
+              "type": "button",
+              "options": [0],
+              "content": ["id_factory_reset", 0, 27]
             }
           ]
         }
