@@ -317,21 +317,32 @@
               "content": ["id_solenoid_enable_1", 0, 42]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Enable Solenoid 2",
-              "type": "toggle",
-              "content": ["id_solenoid_enable_2", 0, 43]
-            },
-            {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Trigger Event",
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
+              "label": "Solenoid 1 Trigger Event",
               "type": "dropdown",
               "options": [
                 ["Key Press", 0],
                 ["Key Press and Release", 1],
                 ["Key Release", 2]
               ],
-              "content": ["id_solenoid_feedback", 0, 30]
+              "content": ["id_solenoid_trigger_1", 0, 45]
+            },
+            {
+              "showIf": "{id_solenoid_enable} == 1",
+              "label": "Enable Solenoid 2",
+              "type": "toggle",
+              "content": ["id_solenoid_enable_2", 0, 43]
+            },
+            {
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_2} == 1",
+              "label": "Solenoid 2 Trigger Event",
+              "type": "dropdown",
+              "options": [
+                ["Key Press", 0],
+                ["Key Press and Release", 1],
+                ["Key Release", 2]
+              ],
+              "content": ["id_solenoid_trigger_2", 0, 46]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
