@@ -426,7 +426,7 @@
             },
             {
               "showIf": "{id_firmware_version} >= 5 && {id_solenoid_enable} == 1",
-              "label": "Enable Solenoid Output",
+              "label": "Enable Solenoid",
               "type": "toggle",
               "content": ["id_solenoid_output_1", 0, 43]
             },

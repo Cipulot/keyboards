@@ -348,13 +348,13 @@
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
-              "label": "Enable Solenoid Output 1",
+              "label": "Enable Solenoid 1",
               "type": "toggle",
               "content": ["id_solenoid_output_1", 0, 42]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
-              "label": "Enable Solenoid Output 2",
+              "label": "Enable Solenoid 2",
               "type": "toggle",
               "content": ["id_solenoid_output_2", 0, 43]
             },
