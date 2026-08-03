@@ -401,6 +401,12 @@
               "content": ["id_solenoid_enable", 0, 31]
             },
             {
+              "showIf": "{id_firmware_version} >= 5 && {id_solenoid_enable} == 1",
+              "label": "Enable Solenoid",
+              "type": "toggle",
+              "content": ["id_solenoid_enable_1", 0, 43]
+            },
+            {
               "showIf": "{id_solenoid_enable} == 1",
               "label": "Trigger Event",
               "type": "dropdown",
@@ -423,12 +429,6 @@
               "label": "Buzz Mode",
               "type": "toggle",
               "content": ["id_solenoid_buzz", 0, 34]
-            },
-            {
-              "showIf": "{id_firmware_version} >= 5 && {id_solenoid_enable} == 1",
-              "label": "Enable Solenoid",
-              "type": "toggle",
-              "content": ["id_solenoid_enable_1", 0, 43]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
