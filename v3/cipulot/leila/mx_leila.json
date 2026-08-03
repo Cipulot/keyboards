@@ -340,9 +340,9 @@
               "type": "dropdown",
               "options": [
                 ["First Available", 0],
-                ["Round Robin", 1],
-                ["Random Available", 2],
-                ["All Enabled Outputs", 3]
+                ["Alternating", 1],
+                ["Random", 2],
+                ["Simultaneous", 3]
               ],
               "content": ["id_solenoid_actuation_pattern", 0, 44]
             },
