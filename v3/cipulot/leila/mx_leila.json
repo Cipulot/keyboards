@@ -350,13 +350,13 @@
               "showIf": "{id_solenoid_enable} == 1",
               "label": "Enable Solenoid 1",
               "type": "toggle",
-              "content": ["id_solenoid_output_1", 0, 42]
+              "content": ["id_solenoid_enable_1", 0, 42]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
               "label": "Enable Solenoid 2",
               "type": "toggle",
-              "content": ["id_solenoid_output_2", 0, 43]
+              "content": ["id_solenoid_enable_2", 0, 43]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
@@ -408,14 +408,14 @@
           "label": "Output Testing",
           "content": [
             {
-              "showIf": "{id_solenoid_output_1} == 1",
+              "showIf": "{id_solenoid_enable_1} == 1",
               "label": "Test Solenoid 1",
               "type": "button",
               "options": [0],
               "content": ["id_solenoid_test_1", 0, 34]
             },
             {
-              "showIf": "{id_solenoid_output_2} == 1",
+              "showIf": "{id_solenoid_enable_2} == 1",
               "label": "Test Solenoid 2",
               "type": "button",
               "options": [0],
