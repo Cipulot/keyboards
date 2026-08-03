@@ -336,6 +336,18 @@
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
+              "label": "Actuation Pattern",
+              "type": "dropdown",
+              "options": [
+                ["First Available", 0],
+                ["Round Robin", 1],
+                ["Random Available", 2],
+                ["All Enabled Outputs", 3]
+              ],
+              "content": ["id_solenoid_actuation_pattern", 0, 44]
+            },
+            {
+              "showIf": "{id_solenoid_enable} == 1",
               "label": "Enable Solenoid Output 1",
               "type": "toggle",
               "content": ["id_solenoid_output_1", 0, 42]
