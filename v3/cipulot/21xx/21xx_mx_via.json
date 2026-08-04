@@ -402,33 +402,33 @@
             },
             {
               "showIf": "{id_firmware_version} >= 5 && {id_solenoid_enable} == 1",
-              "label": "Enable Solenoid",
+              "label": "Enable Solenoid 1",
               "type": "toggle",
               "content": ["id_solenoid_enable_1", 0, 43]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Trigger Event",
+              "showIf": "{id_solenoid_enable} == 1 && ({id_firmware_version} < 5 || {id_solenoid_enable_1} == 1)",
+              "label": "Solenoid 1 Trigger Event",
               "type": "dropdown",
               "options": [
                 ["Key Press", 0],
                 ["Key Press and Release", 1],
                 ["Key Release", 2]
               ],
-              "content": ["id_solenoid_feedback", 0, 32]
+              "content": ["id_solenoid_trigger_1", 0, 32]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Dwell Time (ms)",
+              "showIf": "{id_solenoid_enable} == 1 && ({id_firmware_version} < 5 || {id_solenoid_enable_1} == 1)",
+              "label": "Solenoid 1 Dwell Time (ms)",
               "type": "range",
               "options": [4, 100],
-              "content": ["id_solenoid_dwell", 0, 33]
+              "content": ["id_solenoid_dwell_1", 0, 33]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Buzz Mode",
+              "showIf": "{id_solenoid_enable} == 1 && ({id_firmware_version} < 5 || {id_solenoid_enable_1} == 1)",
+              "label": "Solenoid 1 Buzz Mode",
               "type": "toggle",
-              "content": ["id_solenoid_buzz", 0, 34]
+              "content": ["id_solenoid_buzz_1", 0, 34]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",

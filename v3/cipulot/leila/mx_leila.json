@@ -322,6 +322,16 @@
               "type": "toggle",
               "content": ["id_solenoid_enable_2", 0, 43]
             },
+              "label": "Actuation Pattern",
+              "type": "dropdown",
+              "options": [
+                ["First Available", 0],
+                ["Alternating", 1],
+                ["Random", 2],
+                ["Simultaneous", 3]
+              ],
+              "content": ["id_solenoid_actuation_pattern", 0, 44]
+            },
             {
               "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
               "label": "Solenoid 1 Trigger Event",
@@ -345,29 +355,30 @@
               "content": ["id_solenoid_trigger_2", 0, 46]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Dwell Time (ms)",
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
+              "label": "Solenoid 1 Dwell Time (ms)",
               "type": "range",
               "options": [4, 100],
-              "content": ["id_solenoid_dwell", 0, 31]
+              "content": ["id_solenoid_dwell_1", 0, 47]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Buzz Mode",
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_2} == 1",
+              "label": "Solenoid 2 Dwell Time (ms)",
+              "type": "range",
+              "options": [4, 100],
+              "content": ["id_solenoid_dwell_2", 0, 48]
+            },
+            {
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
+              "label": "Solenoid 1 Buzz Mode",
               "type": "toggle",
-              "content": ["id_solenoid_buzz", 0, 32]
+              "content": ["id_solenoid_buzz_1", 0, 49]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1",
-              "label": "Actuation Pattern",
-              "type": "dropdown",
-              "options": [
-                ["First Available", 0],
-                ["Alternating", 1],
-                ["Random", 2],
-                ["Simultaneous", 3]
-              ],
-              "content": ["id_solenoid_actuation_pattern", 0, 44]
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_2} == 1",
+              "label": "Solenoid 2 Buzz Mode",
+              "type": "toggle",
+              "content": ["id_solenoid_buzz_2", 0, 50]
             },
             {
               "showIf": "{id_solenoid_enable} == 1",
