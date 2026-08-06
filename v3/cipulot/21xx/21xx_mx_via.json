@@ -389,7 +389,7 @@
       ]
     },
     {
-      "showIf": "{id_firmware_version} >= 3",
+      "showIf": "{id_firmware_version} >= 2",
       "label": "Haptic Feedback",
       "content": [
         {
@@ -401,13 +401,13 @@
               "content": ["id_solenoid_enable", 0, 31]
             },
             {
-              "showIf": "{id_firmware_version} >= 5 && {id_solenoid_enable} == 1",
+              "showIf": "{id_solenoid_enable} == 1",
               "label": "Enable Solenoid 1",
               "type": "toggle",
               "content": ["id_solenoid_enable_1", 0, 43]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1 && ({id_firmware_version} < 5 || {id_solenoid_enable_1} == 1)",
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
               "label": "Solenoid 1 Trigger Event",
               "type": "dropdown",
               "options": [
@@ -418,14 +418,14 @@
               "content": ["id_solenoid_trigger_1", 0, 32]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1 && ({id_firmware_version} < 5 || {id_solenoid_enable_1} == 1)",
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
               "label": "Solenoid 1 Dwell Time (ms)",
               "type": "range",
               "options": [4, 100],
               "content": ["id_solenoid_dwell_1", 0, 33]
             },
             {
-              "showIf": "{id_solenoid_enable} == 1 && ({id_firmware_version} < 5 || {id_solenoid_enable_1} == 1)",
+              "showIf": "{id_solenoid_enable} == 1 && {id_solenoid_enable_1} == 1",
               "label": "Solenoid 1 Buzz Mode",
               "type": "toggle",
               "content": ["id_solenoid_buzz_1", 0, 34]
@@ -440,7 +440,7 @@
           ]
         },
         {
-          "showIf": "{id_firmware_version} >= 4 && {id_solenoid_enable} == 1",
+          "showIf": "{id_solenoid_enable} == 1",
           "label": "Key Exclusions",
           "content": [
             {
@@ -480,7 +480,7 @@
           "label": "Output Testing",
           "content": [
             {
-              "showIf": "{id_firmware_version} < 5 || {id_solenoid_enable_1} == 1",
+              "showIf": "{id_solenoid_enable_1} == 1",
               "label": "Test Solenoid",
               "type": "button",
               "options": [0],
@@ -1771,13 +1771,11 @@
           "label": "Board Maintenance",
           "content": [
             {
-              "showIf": "{id_firmware_version} >= 2",
               "label": "Firmware Version",
               "type": "label",
               "content": ["id_firmware_version_text", 0, 29]
             },
             {
-              "showIf": "{id_firmware_version} >= 2",
               "label": "Firmware Build",
               "type": "label",
               "content": ["id_firmware_build_text", 0, 30]
@@ -1786,15 +1784,13 @@
               "label": "Flash Mode",
               "type": "button",
               "options": [0],
-              "content": ["id_flash_mode", 0, 27],
-              "showIf": "{id_firmware_version} >= 2"
+              "content": ["id_flash_mode", 0, 27]
             },
             {
               "label": "Factory reset (erases all settings and restarts)",
               "type": "button",
               "options": [0],
-              "content": ["id_factory_reset", 0, 28],
-              "showIf": "{id_firmware_version} >= 2"
+              "content": ["id_factory_reset", 0, 28]
             }
           ]
         }
