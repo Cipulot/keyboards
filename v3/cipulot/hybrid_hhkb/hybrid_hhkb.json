@@ -359,6 +359,11 @@
       "name": "GC_MENU",
       "title": "Controller Menu button",
       "shortName": "PAD\nMENU"
+    },
+    {
+      "name": "GC_GUIDE",
+      "title": "Controller Guide (Xbox) button",
+      "shortName": "PAD\nGUIDE"
     }
   ],
   "keycodes": ["qmk_rgblight_keycodes"],
@@ -6326,6 +6331,199 @@
       ]
     },
     {
+      "label": "Controller",
+      "content": [
+        {
+          "label": "General",
+          "content": [
+            {
+              "label": "Enable controller",
+              "type": "toggle",
+              "content": ["id_controller_enabled", 12, 1]
+            },
+            {
+              "showIf": "{id_controller_enabled} == 1",
+              "label": "Protocol",
+              "type": "dropdown",
+              "options": ["Native HID", "XInput"],
+              "content": ["id_controller_protocol", 12, 2]
+            },
+            {
+              "showIf": "{id_controller_enabled} == 1",
+              "label": "Note",
+              "type": "label",
+              "content": [
+                "Changing protocol briefly restarts the USB connection."
+              ]
+            },
+            {
+              "showIf": "{id_controller_enabled} == 1",
+              "label": "Enable normal keyboard keys",
+              "type": "toggle",
+              "content": ["id_controller_keyboard", 12, 3]
+            },
+            {
+              "label": "Reset controller settings",
+              "type": "button",
+              "options": [0],
+              "content": ["id_controller_reset", 12, 0]
+            }
+          ]
+        },
+        {
+          "showIf": "{id_controller_enabled} == 1",
+          "label": "Response Curve",
+          "content": [
+            {
+              "label": "Curve",
+              "type": "dropdown",
+              "options": ["Linear", "Custom"],
+              "content": ["id_controller_curve_mode", 12, 4]
+            },
+            {
+              "showIf": "{id_controller_curve_mode} == 1",
+              "content": [
+                {
+                  "label": "Output at 25% travel",
+                  "type": "range",
+                  "options": [0, 100],
+                  "content": ["id_controller_curve_point_1", 12, 5, 0],
+                  "constraints": [
+                    {
+                      "operator": "<=",
+                      "reference": "id_controller_curve_point_2",
+                      "offset": 0,
+                      "onViolation": "push"
+                    }
+                  ]
+                },
+                {
+                  "label": "Output at 50% travel",
+                  "type": "range",
+                  "options": [0, 100],
+                  "content": ["id_controller_curve_point_2", 12, 5, 1],
+                  "constraints": [
+                    {
+                      "operator": ">=",
+                      "reference": "id_controller_curve_point_1",
+                      "offset": 0,
+                      "onViolation": "push"
+                    },
+                    {
+                      "operator": "<=",
+                      "reference": "id_controller_curve_point_3",
+                      "offset": 0,
+                      "onViolation": "push"
+                    }
+                  ]
+                },
+                {
+                  "label": "Output at 75% travel",
+                  "type": "range",
+                  "options": [0, 100],
+                  "content": ["id_controller_curve_point_3", 12, 5, 2],
+                  "constraints": [
+                    {
+                      "operator": ">=",
+                      "reference": "id_controller_curve_point_2",
+                      "offset": 0,
+                      "onViolation": "push"
+                    },
+                    {
+                      "operator": "<=",
+                      "reference": "id_controller_curve_point_4",
+                      "offset": 0,
+                      "onViolation": "push"
+                    }
+                  ]
+                },
+                {
+                  "label": "Output at 100% travel",
+                  "type": "range",
+                  "options": [0, 100],
+                  "content": ["id_controller_curve_point_4", 12, 5, 3],
+                  "constraints": [
+                    {
+                      "operator": ">=",
+                      "reference": "id_controller_curve_point_3",
+                      "offset": 0,
+                      "onViolation": "push"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "showIf": "{id_controller_enabled} == 1",
+          "label": "Dead Zones",
+          "content": [
+            {
+              "label": "Calibrate controller dead zones (release all assigned controller keys)",
+              "type": "button",
+              "options": [0],
+              "content": ["id_controller_calibrate", 12, 6]
+            },
+            {
+              "label": "Center hysteresis",
+              "type": "dropdown",
+              "options": ["Off", "Low", "Normal", "High"],
+              "content": ["id_controller_hysteresis", 12, 8]
+            },
+            {
+              "label": "Stick bottom-out stabilization",
+              "type": "dropdown",
+              "options": ["Off", "Low", "Normal", "High"],
+              "content": ["id_controller_bottomout", 12, 9]
+            },
+            {
+              "label": "Trigger bottom-out stabilization",
+              "type": "dropdown",
+              "options": ["Off", "Low", "Normal", "High"],
+              "content": ["id_controller_trigger_bottomout", 12, 10]
+            },
+            {
+              "label": "Left stick X effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_lx", 12, 7, 0]
+            },
+            {
+              "label": "Left stick Y effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_ly", 12, 7, 1]
+            },
+            {
+              "label": "Right stick X effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_rx", 12, 7, 2]
+            },
+            {
+              "label": "Right stick Y effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_ry", 12, 7, 3]
+            },
+            {
+              "label": "Left trigger effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_lt", 12, 7, 4]
+            },
+            {
+              "label": "Right trigger effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_rt", 12, 7, 5]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "label": "QMK Settings",
       "content": [
         {
@@ -6637,196 +6835,6 @@
               "type": "button",
               "options": [0],
               "content": ["id_factory_reset", 0, 26]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "showIf": "{id_firmware_version} >= 5",
-      "label": "Controller",
-      "content": [
-        {
-          "label": "General",
-          "content": [
-            {
-              "label": "Enable controller",
-              "type": "toggle",
-              "content": ["id_controller_enabled", 12, 1]
-            },
-            {
-              "showIf": "{id_controller_enabled} == 1",
-              "label": "Protocol",
-              "type": "dropdown",
-              "options": ["Native HID"],
-              "content": ["id_controller_protocol", 12, 2]
-            },
-            {
-              "showIf": "{id_controller_enabled} == 1",
-              "label": "Enable normal keyboard keys",
-              "type": "toggle",
-              "content": ["id_controller_keyboard", 12, 3]
-            },
-            {
-              "label": "Reset controller settings",
-              "type": "button",
-              "options": [0],
-              "content": ["id_controller_reset", 12, 0]
-            }
-          ]
-        },
-        {
-          "showIf": "{id_controller_enabled} == 1",
-          "label": "Response Curve",
-          "content": [
-            {
-              "label": "Curve",
-              "type": "dropdown",
-              "options": ["Linear", "Custom"],
-              "content": ["id_controller_curve_mode", 12, 4]
-            },
-            {
-              "showIf": "{id_controller_curve_mode} == 1",
-              "content": [
-                {
-                  "label": "Output at 25% travel",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_1", 12, 5, 0],
-                  "constraints": [
-                    {
-                      "operator": "<=",
-                      "reference": "id_controller_curve_point_2",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                },
-                {
-                  "label": "Output at 50% travel",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_2", 12, 5, 1],
-                  "constraints": [
-                    {
-                      "operator": ">=",
-                      "reference": "id_controller_curve_point_1",
-                      "offset": 0,
-                      "onViolation": "push"
-                    },
-                    {
-                      "operator": "<=",
-                      "reference": "id_controller_curve_point_3",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                },
-                {
-                  "label": "Output at 75% travel",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_3", 12, 5, 2],
-                  "constraints": [
-                    {
-                      "operator": ">=",
-                      "reference": "id_controller_curve_point_2",
-                      "offset": 0,
-                      "onViolation": "push"
-                    },
-                    {
-                      "operator": "<=",
-                      "reference": "id_controller_curve_point_4",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                },
-                {
-                  "label": "Output at 100% travel",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_4", 12, 5, 3],
-                  "constraints": [
-                    {
-                      "operator": ">=",
-                      "reference": "id_controller_curve_point_3",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "showIf": "{id_controller_enabled} == 1",
-          "label": "Dead Zones",
-          "content": [
-            {
-              "label": "Calibrate controller dead zones (release all assigned controller keys)",
-              "type": "button",
-              "options": [0],
-              "content": ["id_controller_calibrate", 12, 6]
-            },
-            {
-              "label": "Center hysteresis",
-              "type": "dropdown",
-              "options": [
-                "Off (0%)",
-                "Low (1.0%)",
-                "Normal (1.5%)",
-                "High (2.5%)"
-              ],
-              "content": ["id_controller_hysteresis", 12, 8]
-            },
-            {
-              "label": "Bottom-out stabilization",
-              "type": "dropdown",
-              "options": [
-                "Off (0%)",
-                "Low (2.0%)",
-                "Normal (3.0%)",
-                "High (5.0%)"
-              ],
-              "content": ["id_controller_bottomout", 12, 9]
-            },
-            {
-              "label": "Left stick X effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_lx", 12, 7, 0]
-            },
-            {
-              "label": "Left stick Y effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_ly", 12, 7, 1]
-            },
-            {
-              "label": "Right stick X effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_rx", 12, 7, 2]
-            },
-            {
-              "label": "Right stick Y effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_ry", 12, 7, 3]
-            },
-            {
-              "label": "Left trigger effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_lt", 12, 7, 4]
-            },
-            {
-              "label": "Right trigger effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_rt", 12, 7, 5]
             }
           ]
         }
