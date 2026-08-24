@@ -6360,10 +6360,16 @@
         },
         {
           "showIf": "{id_controller_enabled} == 1",
-          "label": "Response Curve",
+          "label": "Stick Behavior",
           "content": [
             {
-              "label": "Curve",
+              "label": "Stick transition speed",
+              "type": "dropdown",
+              "options": ["Fast", "Normal", "Smooth"],
+              "content": ["id_controller_transition_speed", 12, 11]
+            },
+            {
+              "label": "Response curve",
               "type": "dropdown",
               "options": ["Linear", "Custom"],
               "content": ["id_controller_curve_mode", 12, 4]
@@ -6372,7 +6378,7 @@
               "showIf": "{id_controller_curve_mode} == 1",
               "content": [
                 {
-                  "label": "Output at 25% travel",
+                  "label": "Output at 25% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_1", 12, 5, 0],
@@ -6386,7 +6392,7 @@
                   ]
                 },
                 {
-                  "label": "Output at 50% travel",
+                  "label": "Output at 50% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_2", 12, 5, 1],
@@ -6406,7 +6412,7 @@
                   ]
                 },
                 {
-                  "label": "Output at 75% travel",
+                  "label": "Output at 75% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_3", 12, 5, 2],
@@ -6426,7 +6432,7 @@
                   ]
                 },
                 {
-                  "label": "Output at 100% travel",
+                  "label": "Output at 100% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_4", 12, 5, 3],
@@ -6440,6 +6446,36 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "showIf": "{id_controller_enabled} == 1",
+          "label": "Trigger Behavior",
+          "content": [
+            {
+              "label": "Left trigger full-press point (0.1%)",
+              "type": "range",
+              "options": [750, 1000],
+              "content": ["id_controller_left_trigger_full_press", 12, 12]
+            },
+            {
+              "label": "Right trigger full-press point (0.1%)",
+              "type": "range",
+              "options": [750, 1000],
+              "content": ["id_controller_right_trigger_full_press", 12, 13]
+            },
+            {
+              "label": "Left trigger effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_lt", 12, 7, 4]
+            },
+            {
+              "label": "Right trigger effective dead zone (0.1%)",
+              "type": "range",
+              "options": [0, 275],
+              "content": ["id_controller_deadzone_rt", 12, 7, 5]
             }
           ]
         },
@@ -6466,12 +6502,6 @@
               "content": ["id_controller_bottomout", 12, 9]
             },
             {
-              "label": "Trigger bottom-out stabilization",
-              "type": "dropdown",
-              "options": ["Off", "Low", "Normal", "High"],
-              "content": ["id_controller_trigger_bottomout", 12, 10]
-            },
-            {
               "label": "Left stick X effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
@@ -6494,18 +6524,6 @@
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_ry", 12, 7, 3]
-            },
-            {
-              "label": "Left trigger effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_lt", 12, 7, 4]
-            },
-            {
-              "label": "Right trigger effective dead zone (0.1%)",
-              "type": "range",
-              "options": [0, 275],
-              "content": ["id_controller_deadzone_rt", 12, 7, 5]
             }
           ]
         }

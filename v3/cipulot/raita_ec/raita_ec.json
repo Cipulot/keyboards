@@ -6339,10 +6339,16 @@
         },
         {
           "showIf": "{id_controller_enabled} == 1",
-          "label": "Response Curve",
+          "label": "Stick Behavior",
           "content": [
             {
-              "label": "Curve",
+              "label": "Stick transition speed",
+              "type": "dropdown",
+              "options": ["Fast", "Normal", "Smooth"],
+              "content": ["id_controller_transition_speed", 12, 11]
+            },
+            {
+              "label": "Response curve",
               "type": "dropdown",
               "options": ["Linear", "Custom"],
               "content": ["id_controller_curve_mode", 12, 4]
@@ -6351,7 +6357,7 @@
               "showIf": "{id_controller_curve_mode} == 1",
               "content": [
                 {
-                  "label": "Output at 25% travel",
+                  "label": "Output at 25% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_1", 12, 5, 0],
@@ -6365,7 +6371,7 @@
                   ]
                 },
                 {
-                  "label": "Output at 50% travel",
+                  "label": "Output at 50% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_2", 12, 5, 1],
@@ -6385,7 +6391,7 @@
                   ]
                 },
                 {
-                  "label": "Output at 75% travel",
+                  "label": "Output at 75% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_3", 12, 5, 2],
@@ -6405,7 +6411,7 @@
                   ]
                 },
                 {
-                  "label": "Output at 100% travel",
+                  "label": "Output at 100% travel (%)",
                   "type": "range",
                   "options": [0, 100],
                   "content": ["id_controller_curve_point_4", 12, 5, 3],
