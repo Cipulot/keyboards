@@ -6348,6 +6348,13 @@
               "content": ["id_controller_keyboard", 12, 3]
             },
             {
+              "showIf": "{id_controller_enabled} == 1",
+              "label": "Calibrate controller dead zones (release all assigned controller keys)",
+              "type": "button",
+              "options": [0],
+              "content": ["id_controller_calibrate", 12, 6]
+            },
+            {
               "label": "Reset controller settings",
               "type": "button",
               "options": [0],
@@ -6360,10 +6367,22 @@
           "label": "Stick Behavior",
           "content": [
             {
-              "label": "Stick transition speed",
+              "label": "Transition speed",
               "type": "dropdown",
               "options": ["Fast", "Normal", "Smooth"],
               "content": ["id_controller_transition_speed", 12, 11]
+            },
+            {
+              "label": "Center hysteresis",
+              "type": "dropdown",
+              "options": ["Off", "Low", "Normal", "High"],
+              "content": ["id_controller_hysteresis", 12, 8]
+            },
+            {
+              "label": "Bottom-out stabilization",
+              "type": "dropdown",
+              "options": ["Off", "Low", "Normal", "High"],
+              "content": ["id_controller_bottomout", 12, 9]
             },
             {
               "label": "Response curve",
@@ -6373,139 +6392,151 @@
             },
             {
               "showIf": "{id_controller_curve_mode} == 1",
-              "content": [
+              "label": "Output at 25% travel (%)",
+              "type": "range",
+              "options": [0, 100],
+              "content": ["id_controller_curve_point_1", 12, 5, 0],
+              "constraints": [
                 {
-                  "label": "Output at 25% travel (%)",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_1", 12, 5, 0],
-                  "constraints": [
-                    {
-                      "operator": "<=",
-                      "reference": "id_controller_curve_point_2",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                },
-                {
-                  "label": "Output at 50% travel (%)",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_2", 12, 5, 1],
-                  "constraints": [
-                    {
-                      "operator": ">=",
-                      "reference": "id_controller_curve_point_1",
-                      "offset": 0,
-                      "onViolation": "push"
-                    },
-                    {
-                      "operator": "<=",
-                      "reference": "id_controller_curve_point_3",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                },
-                {
-                  "label": "Output at 75% travel (%)",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_3", 12, 5, 2],
-                  "constraints": [
-                    {
-                      "operator": ">=",
-                      "reference": "id_controller_curve_point_2",
-                      "offset": 0,
-                      "onViolation": "push"
-                    },
-                    {
-                      "operator": "<=",
-                      "reference": "id_controller_curve_point_4",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
-                },
-                {
-                  "label": "Output at 100% travel (%)",
-                  "type": "range",
-                  "options": [0, 100],
-                  "content": ["id_controller_curve_point_4", 12, 5, 3],
-                  "constraints": [
-                    {
-                      "operator": ">=",
-                      "reference": "id_controller_curve_point_3",
-                      "offset": 0,
-                      "onViolation": "push"
-                    }
-                  ]
+                  "operator": "<=",
+                  "reference": "id_controller_curve_point_2",
+                  "offset": -10,
+                  "onViolation": "push"
                 }
               ]
+            },
+            {
+              "showIf": "{id_controller_curve_mode} == 1",
+              "label": "Output at 50% travel (%)",
+              "type": "range",
+              "options": [0, 100],
+              "content": ["id_controller_curve_point_2", 12, 5, 1],
+              "constraints": [
+                {
+                  "operator": ">=",
+                  "reference": "id_controller_curve_point_1",
+                  "offset": 10,
+                  "onViolation": "push"
+                },
+                {
+                  "operator": "<=",
+                  "reference": "id_controller_curve_point_3",
+                  "offset": -10,
+                  "onViolation": "push"
+                }
+              ]
+            },
+            {
+              "showIf": "{id_controller_curve_mode} == 1",
+              "label": "Output at 75% travel (%)",
+              "type": "range",
+              "options": [0, 100],
+              "content": ["id_controller_curve_point_3", 12, 5, 2],
+              "constraints": [
+                {
+                  "operator": ">=",
+                  "reference": "id_controller_curve_point_2",
+                  "offset": 10,
+                  "onViolation": "push"
+                },
+                {
+                  "operator": "<=",
+                  "reference": "id_controller_curve_point_4",
+                  "offset": -10,
+                  "onViolation": "push"
+                }
+              ]
+            },
+            {
+              "showIf": "{id_controller_curve_mode} == 1",
+              "label": "Output at 100% travel (%)",
+              "type": "range",
+              "options": [0, 100],
+              "content": ["id_controller_curve_point_4", 12, 5, 3],
+              "constraints": [
+                {
+                  "operator": ">=",
+                  "reference": "id_controller_curve_point_3",
+                  "offset": 10,
+                  "onViolation": "push"
+                }
+              ]
+            },
+            {
+              "showIf": "{id_controller_curve_mode} == 1",
+              "label": "Apply & save curve changes",
+              "type": "button",
+              "options": [0],
+              "content": ["id_controller_curve_save", 12, 14]
             }
           ]
         },
         {
           "showIf": "{id_controller_enabled} == 1",
-          "label": "Dead Zones",
+          "label": "Left Stick",
           "content": [
             {
-              "label": "Calibrate controller dead zones (release all assigned controller keys)",
-              "type": "button",
-              "options": [0],
-              "content": ["id_controller_calibrate", 12, 6]
-            },
-            {
-              "label": "Center hysteresis",
-              "type": "dropdown",
-              "options": ["Off", "Low", "Normal", "High"],
-              "content": ["id_controller_hysteresis", 12, 8]
-            },
-            {
-              "label": "Stick bottom-out stabilization",
-              "type": "dropdown",
-              "options": ["Off", "Low", "Normal", "High"],
-              "content": ["id_controller_bottomout", 12, 9]
-            },
-            {
-              "label": "Trigger bottom-out stabilization",
-              "type": "dropdown",
-              "options": ["Off", "Low", "Normal", "High"],
-              "content": ["id_controller_trigger_bottomout", 12, 10]
-            },
-            {
-              "label": "Left stick X effective dead zone (0.1%)",
+              "label": "X effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_lx", 12, 7, 0]
             },
             {
-              "label": "Left stick Y effective dead zone (0.1%)",
+              "label": "Y effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_ly", 12, 7, 1]
-            },
+            }
+          ]
+        },
+        {
+          "showIf": "{id_controller_enabled} == 1",
+          "label": "Right Stick",
+          "content": [
             {
-              "label": "Right stick X effective dead zone (0.1%)",
+              "label": "X effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_rx", 12, 7, 2]
             },
             {
-              "label": "Right stick Y effective dead zone (0.1%)",
+              "label": "Y effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_ry", 12, 7, 3]
+            }
+          ]
+        },
+        {
+          "showIf": "{id_controller_enabled} == 1",
+          "label": "Left Trigger",
+          "content": [
+            {
+              "label": "Full-press point (%)",
+              "type": "range",
+              "options": [0, 100],
+              "content": ["id_controller_left_trigger_full_press", 12, 12]
             },
             {
-              "label": "Left trigger effective dead zone (0.1%)",
+              "label": "Effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_lt", 12, 7, 4]
+            }
+          ]
+        },
+        {
+          "showIf": "{id_controller_enabled} == 1",
+          "label": "Right Trigger",
+          "content": [
+            {
+              "label": "Full-press point (%)",
+              "type": "range",
+              "options": [0, 100],
+              "content": ["id_controller_right_trigger_full_press", 12, 13]
             },
             {
-              "label": "Right trigger effective dead zone (0.1%)",
+              "label": "Effective dead zone (0.1%)",
               "type": "range",
               "options": [0, 275],
               "content": ["id_controller_deadzone_rt", 12, 7, 5]
