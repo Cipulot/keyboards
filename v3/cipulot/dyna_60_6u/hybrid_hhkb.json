@@ -1,13 +1,13 @@
 {
   "name": {
-    "options": ["Dyna 60 6U", "Blue Ridge"],
+    "options": ["Hybrid HHKB", "Blue Ridge"],
     "content": ["id_board_variant", 0, 245]
   },
   "vendorId": "0x6369",
   "productId": "0x6BFC",
   "matrix": {
-    "rows": 7,
-    "cols": 22
+    "rows": 5,
+    "cols": 23
   },
   "customKeycodes": [
     {

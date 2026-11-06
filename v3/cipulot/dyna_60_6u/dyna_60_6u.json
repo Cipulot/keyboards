@@ -1,13 +1,13 @@
 {
   "name": {
-    "options": ["Hybrid HHKB", "Blue Ridge"],
+    "options": ["DynaCap DYNA60 6U", "Blue Ridge"],
     "content": ["id_board_variant", 0, 245]
   },
   "vendorId": "0x6369",
   "productId": "0x6C08",
   "matrix": {
-    "rows": 5,
-    "cols": 23
+    "rows": 7,
+    "cols": 22
   },
   "customKeycodes": [
     {
