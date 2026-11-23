@@ -385,12 +385,28 @@
                   "label": "Actuation threshold (1-1023)",
                   "type": "range",
                   "options": [1, 1023],
+                  "constraints": [
+                    {
+                      "operator": ">=",
+                      "reference": "id_mode_0_release_threshold",
+                      "offset": 50,
+                      "onViolation": "push"
+                    }
+                  ],
                   "content": ["id_mode_0_actuation_threshold", 0, 2]
                 },
                 {
                   "label": "Release threshold (1-1023)",
                   "type": "range",
                   "options": [1, 1023],
+                  "constraints": [
+                    {
+                      "operator": "<=",
+                      "reference": "id_mode_0_actuation_threshold",
+                      "offset": -50,
+                      "onViolation": "push"
+                    }
+                  ],
                   "content": ["id_mode_0_release_threshold", 0, 3]
                 },
                 {
